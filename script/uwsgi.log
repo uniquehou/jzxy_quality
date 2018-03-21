@@ -1,0 +1,113 @@
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Mar 21 19:50:49 2018] ***
+compiled with version: 5.4.0 20160609 on 22 December 2017 10:25:14
+os: Linux-4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016
+nodename: VM-218-113-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/jzxy_quality
+writing pidfile to /var/www/jzxy_quality/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/jzxy_quality
+your processes number limit is 3308
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on :8055 fd 3
+uwsgi socket 0 bound to UNIX address /var/www/jzxy_quality/script/uwsgi.sock fd 6
+Python version: 3.5.2 (default, Sep 14 2017, 22:51:06)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xd72eb0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 485712 bytes (474 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0xd72eb0 pid: 20793 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20793)
+spawned uWSGI worker 1 (pid: 20799, cores: 1)
+spawned uWSGI worker 2 (pid: 20800, cores: 1)
+spawned uWSGI worker 3 (pid: 20801, cores: 1)
+spawned uWSGI worker 4 (pid: 20802, cores: 1)
+spawned uWSGI worker 5 (pid: 20803, cores: 1)
+spawned uWSGI http 1 (pid: 20804)
+[pid: 20801|app: 0|req: 1/1] 111.53.177.42 () {42 vars in 805 bytes} [Wed Mar 21 19:51:17 2018] GET /quality/search => generated 0 bytes in 216 msecs (HTTP/1.1 301) 3 headers in 121 bytes (1 switches on core 0)
+[pid: 20800|app: 0|req: 1/2] 111.53.177.42 () {42 vars in 807 bytes} [Wed Mar 21 19:51:18 2018] GET /quality/search/ => generated 48363 bytes in 236 msecs (HTTP/1.1 200) 5 headers in 279 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 20802|app: 0|req: 1/3] 111.53.177.42 () {42 vars in 775 bytes} [Wed Mar 21 19:51:18 2018] GET /favicon.ico => generated 2189 bytes in 146 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 20799|app: 0|req: 1/4] 111.53.177.42 () {42 vars in 1100 bytes} [Wed Mar 21 19:51:54 2018] GET /quality/search/ => generated 48363 bytes in 300 msecs (HTTP/1.1 200) 5 headers in 279 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 20803|app: 0|req: 1/5] 111.53.177.42 () {40 vars in 1057 bytes} [Wed Mar 21 19:51:59 2018] GET /favicon.ico => generated 2189 bytes in 111 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 20801|app: 0|req: 2/6] 223.104.14.126 () {38 vars in 852 bytes} [Wed Mar 21 19:52:09 2018] GET /quality/search/ => generated 48363 bytes in 66 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 20800|app: 0|req: 2/7] 123.151.77.132 () {44 vars in 991 bytes} [Wed Mar 21 19:52:10 2018] GET /favicon.ico => generated 2189 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 20802|app: 0|req: 2/8] 123.151.77.132 () {44 vars in 991 bytes} [Wed Mar 21 19:52:10 2018] GET /favicon.ico => generated 2189 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 20799|app: 0|req: 2/9] 123.151.77.132 () {54 vars in 1217 bytes} [Wed Mar 21 19:52:23 2018] POST /quality/search/ => generated 263 bytes in 84 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20803|app: 0|req: 2/10] 123.151.77.132 () {54 vars in 1217 bytes} [Wed Mar 21 19:52:32 2018] POST /quality/search/ => generated 263 bytes in 148 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 20801|app: 0|req: 3/11] 123.151.77.132 () {44 vars in 1009 bytes} [Wed Mar 21 19:52:49 2018] GET /quality/search/ => generated 48363 bytes in 28 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 20800|app: 0|req: 3/12] 223.104.14.126 () {42 vars in 933 bytes} [Wed Mar 21 19:52:50 2018] GET /favicon.ico => generated 2189 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 20802|app: 0|req: 3/13] 223.104.14.126 () {42 vars in 933 bytes} [Wed Mar 21 19:52:50 2018] GET /favicon.ico => generated 2189 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 20799|app: 0|req: 3/14] 61.151.178.180 () {36 vars in 628 bytes} [Wed Mar 21 19:53:07 2018] GET /quality/search => generated 0 bytes in 17 msecs (HTTP/1.1 301) 3 headers in 121 bytes (2 switches on core 0)
+[pid: 20803|app: 0|req: 3/15] 111.53.177.42 () {42 vars in 1082 bytes} [Wed Mar 21 19:53:46 2018] GET /xadmin => generated 0 bytes in 20 msecs (HTTP/1.1 301) 3 headers in 113 bytes (1 switches on core 0)
+[pid: 20801|app: 0|req: 4/16] 111.53.177.42 () {42 vars in 1084 bytes} [Wed Mar 21 19:53:46 2018] GET /xadmin/ => generated 4163 bytes in 128 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 0)
+Not Found: /404.html
+Not Found: /404.html
+[pid: 20800|app: 0|req: 4/18] 111.53.177.42 () {42 vars in 1095 bytes} [Wed Mar 21 19:53:46 2018] GET /static/xadmin/vendor/bootstrap/css/bootstrap.css => generated 2180 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 4/18] 111.53.177.42 () {42 vars in 1092 bytes} [Wed Mar 21 19:53:46 2018] GET /static/xadmin/css/themes/bootstrap-xadmin.css => generated 2180 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 20799|app: 0|req: 4/19] 111.53.177.42 () {42 vars in 1101 bytes} [Wed Mar 21 19:53:46 2018] GET /static/xadmin/vendor/font-awesome/css/font-awesome.css => generated 2180 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+Not Found: /404.html
+Not Found: /404.html
+Not Found: /404.html
+[pid: 20800|app: 0|req: 5/21] 111.53.177.42 () {42 vars in 1083 bytes} [Wed Mar 21 19:53:46 2018] GET /static/xadmin/css/xadmin.plugins.css => generated 2180 bytes in 28 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 20803|app: 0|req: 4/21] 111.53.177.42 () {42 vars in 1080 bytes} [Wed Mar 21 19:53:46 2018] GET /static/xadmin/css/xadmin.main.css => generated 2180 bytes in 30 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 5/22] 111.53.177.42 () {42 vars in 1069 bytes} [Wed Mar 21 19:53:46 2018] GET /static/xadmin/vendor/jquery/jquery.js => generated 2180 bytes in 28 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 20801|app: 0|req: 5/23] 111.53.177.42 () {42 vars in 1086 bytes} [Wed Mar 21 19:53:46 2018] GET /static/xadmin/css/xadmin.responsive.css => generated 2180 bytes in 35 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 20799|app: 0|req: 5/24] 111.53.177.42 () {42 vars in 1080 bytes} [Wed Mar 21 19:53:46 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js => generated 2180 bytes in 18 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+Not Found: /404.html
+Not Found: /404.html
+[pid: 20802|app: 0|req: 6/25] 111.53.177.42 () {42 vars in 1084 bytes} [Wed Mar 21 19:53:47 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js => generated 2180 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 20801|app: 0|req: 6/26] 111.53.177.42 () {42 vars in 1081 bytes} [Wed Mar 21 19:53:47 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js => generated 2180 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 20803|app: 0|req: 5/27] 111.53.177.42 () {42 vars in 1082 bytes} [Wed Mar 21 19:53:47 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js => generated 2180 bytes in 15 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 20800|app: 0|req: 6/28] 111.53.177.42 () {42 vars in 1052 bytes} [Wed Mar 21 19:53:46 2018] GET /xadmin/jsi18n/ => generated 4170 bytes in 97 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 20802|app: 0|req: 7/29] 111.53.177.42 () {42 vars in 1063 bytes} [Wed Mar 21 19:53:47 2018] GET /static/xadmin/js/xadmin.main.js => generated 2180 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 20799|app: 0|req: 6/30] 111.53.177.42 () {42 vars in 1078 bytes} [Wed Mar 21 19:53:47 2018] GET /static/xadmin/vendor/bootstrap/js/bootstrap.js => generated 2180 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 20801|app: 0|req: 7/31] 111.53.177.42 () {42 vars in 1069 bytes} [Wed Mar 21 19:53:47 2018] GET /static/xadmin/js/xadmin.responsive.js => generated 2180 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 20803|app: 0|req: 6/32] 111.53.177.42 () {42 vars in 1080 bytes} [Wed Mar 21 19:53:48 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js => generated 2180 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /404.html
+[pid: 20800|app: 0|req: 7/33] 111.53.177.42 () {42 vars in 1082 bytes} [Wed Mar 21 19:53:48 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js => generated 2180 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 20802|app: 0|req: 8/34] 111.53.177.42 () {42 vars in 1081 bytes} [Wed Mar 21 19:53:48 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js => generated 2180 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 20799|app: 0|req: 7/35] 111.53.177.42 () {42 vars in 1084 bytes} [Wed Mar 21 19:53:48 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js => generated 2180 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 20801|app: 0|req: 8/36] 111.53.177.42 () {42 vars in 1078 bytes} [Wed Mar 21 19:53:48 2018] GET /static/xadmin/vendor/bootstrap/js/bootstrap.js => generated 2180 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 20803|app: 0|req: 7/37] 111.53.177.42 () {42 vars in 1063 bytes} [Wed Mar 21 19:53:48 2018] GET /static/xadmin/js/xadmin.main.js => generated 2180 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 20800|app: 0|req: 8/38] 111.53.177.42 () {42 vars in 1069 bytes} [Wed Mar 21 19:53:48 2018] GET /static/xadmin/js/xadmin.responsive.js => generated 2180 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 9/39] 111.53.177.42 () {44 vars in 1115 bytes} [Wed Mar 21 19:54:41 2018] GET /xadmin/ => generated 4163 bytes in 158 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 20799|app: 0|req: 8/40] 111.53.177.42 () {44 vars in 1083 bytes} [Wed Mar 21 19:54:41 2018] GET /xadmin/jsi18n/ => generated 4170 bytes in 107 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 20801|app: 0|req: 9/41] 123.151.77.132 () {44 vars in 993 bytes} [Wed Mar 21 19:54:54 2018] GET /xadmin/ => generated 4163 bytes in 12 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 0)
+[pid: 20803|app: 0|req: 8/42] 123.151.77.132 () {46 vars in 938 bytes} [Wed Mar 21 19:54:54 2018] GET /xadmin/jsi18n/ => generated 4170 bytes in 95 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 20800|app: 0|req: 9/43] 223.104.14.126 () {42 vars in 925 bytes} [Wed Mar 21 19:54:57 2018] GET /favicon.ico => generated 2189 bytes in 129 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 20802|app: 0|req: 10/44] 223.104.14.126 () {42 vars in 925 bytes} [Wed Mar 21 19:54:58 2018] GET /favicon.ico => generated 2189 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 20799|app: 0|req: 9/45] 101.226.65.107 () {38 vars in 740 bytes} [Wed Mar 21 19:55:17 2018] GET /quality/search => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 121 bytes (2 switches on core 0)
+[pid: 20801|app: 0|req: 10/46] 101.226.65.107 () {40 vars in 798 bytes} [Wed Mar 21 19:55:17 2018] GET /quality/search/ => generated 48363 bytes in 76 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+[pid: 20803|app: 0|req: 9/47] 61.151.180.39 () {36 vars in 681 bytes} [Wed Mar 21 19:55:53 2018] GET /xadmin => generated 0 bytes in 19 msecs (HTTP/1.1 301) 3 headers in 113 bytes (1 switches on core 0)
