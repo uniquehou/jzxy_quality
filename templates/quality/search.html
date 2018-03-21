@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>素质查询</title>
+	<title>晋中学院大学生素质查询</title>
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="../../static/css/bootstrap-select.min.css">
 	<style type="text/css">
@@ -14,13 +14,13 @@
 
         /* menu */
         .menu {
-            height: 30px;
-            background: #cccccc;
+            margin-top: 1px;
+            height: 40px;
             margin-bottom: 20px;
         }
         .menu div {
             padding: 0px;
-            line-height: 30px;
+            line-height: 40px;
             border: 1px solid #e3e3e3;
         }
 
@@ -42,8 +42,8 @@
 
     <div class="menu container-fluid">
         <div class="row">
-        <div class="col-xs-6 col-sm-6 text-center" id="to_student">按学号查询</div>
-        <div class="col-xs-6 col-sm-6 text-center" id="to_grade">按班级查询</div>
+        <div class="col-xs-6 col-sm-6 text-center btn-primary btn" id="to_student">按学号查询</div>
+        <div class="col-xs-6 col-sm-6 text-center btn-default btn" id="to_grade">按班级查询</div>
             </div>
     </div>
 
@@ -107,17 +107,25 @@
         var result_div = $("div.result_info");
 
 		$("#to_student").click(function () {
+		    $("#to_grade").removeClass('btn-primary');
+            $("#to_grade").addClass('btn-default');
+            $("#to_student").removeClass('btn-default');
+            $("#to_student").addClass('btn-primary');
 		    $("#result").text("");
 		    result_div.hide();
             grade_div.hide();
             student_div.show();
-        })
+        });
         $("#to_grade").click(function () {
+            $("#to_student").removeClass('btn-primary');
+            $("#to_student").addClass('btn-default');
+            $("#to_grade").removeClass('btn-default');
+            $("#to_grade").addClass('btn-primary');
             $("#result").text("");
             result_div.hide();
             grade_div.show();
             student_div.hide();
-        })
+        });
 
         $("#search_student").click(function (e) {
             if ($("#student_id").val() == "")
@@ -143,7 +151,7 @@
                         result_div.show();
                         // add matin data
                         if (res.matin_list.length == 0)
-                            $("#matin_list").after("<p class='text-center add_data'>无迟到记录</p>")
+                            $("#matin_list").after("<p class='text-center add_data'>无迟到记录</p>");
                         else {
                             for (i=0; i<res.matin_list.length; i++) {
                                 tr = "<tr class='add_data'>"+
@@ -176,7 +184,7 @@
                     $("#search_student").button('reset');
                 }
             })
-        })
+        });
 
 
         $("#search_grade").click(function (e) {
@@ -203,7 +211,7 @@
                         result_div.show();
                         // add matin data
                         if (res.matin_list.length == 0)
-                            $("#matin_list").after("<p class='text-center add_data'>无迟到记录</p>")
+                            $("#matin_list").after("<p class='text-center add_data'>无迟到记录</p>");
                         else {
                             for (i=0; i<res.matin_list.length; i++) {
                                 tr = "<tr class='add_data'>"+
