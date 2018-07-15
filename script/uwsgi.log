@@ -111,3 +111,1411 @@ Not Found: /favicon.ico
 [pid: 20799|app: 0|req: 9/45] 101.226.65.107 () {38 vars in 740 bytes} [Wed Mar 21 19:55:17 2018] GET /quality/search => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 121 bytes (2 switches on core 0)
 [pid: 20801|app: 0|req: 10/46] 101.226.65.107 () {40 vars in 798 bytes} [Wed Mar 21 19:55:17 2018] GET /quality/search/ => generated 48363 bytes in 76 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
 [pid: 20803|app: 0|req: 9/47] 61.151.180.39 () {36 vars in 681 bytes} [Wed Mar 21 19:55:53 2018] GET /xadmin => generated 0 bytes in 19 msecs (HTTP/1.1 301) 3 headers in 113 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Jun 13 11:52:06 2018] ***
+compiled with version: 5.4.0 20160609 on 22 December 2017 10:25:14
+os: Linux-4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016
+nodename: VM-218-113-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/jzxy_quality
+writing pidfile to /var/www/jzxy_quality/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/jzxy_quality
+your processes number limit is 3308
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on :8055 fd 3
+uwsgi socket 0 bound to UNIX address /var/www/jzxy_quality/script/uwsgi.sock fd 6
+Python version: 3.5.2 (default, Sep 14 2017, 22:51:06)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1d88eb0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 485712 bytes (474 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x1d88eb0 pid: 8864 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8864)
+spawned uWSGI worker 1 (pid: 8867, cores: 1)
+spawned uWSGI worker 2 (pid: 8868, cores: 1)
+spawned uWSGI worker 3 (pid: 8869, cores: 1)
+spawned uWSGI worker 4 (pid: 8870, cores: 1)
+spawned uWSGI worker 5 (pid: 8871, cores: 1)
+spawned uWSGI http 1 (pid: 8872)
+[pid: 8868|app: 0|req: 1/1] 111.53.177.42 () {42 vars in 814 bytes} [Wed Jun 13 11:52:34 2018] GET /search => generated 0 bytes in 193 msecs (HTTP/1.1 301) 3 headers in 113 bytes (2 switches on core 0)
+[pid: 8869|app: 0|req: 1/2] 111.53.177.42 () {42 vars in 816 bytes} [Wed Jun 13 11:52:35 2018] GET /search/ => generated 8185 bytes in 215 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8870|app: 0|req: 1/3] 111.53.177.42 () {40 vars in 789 bytes} [Wed Jun 13 11:52:35 2018] GET /favicon.ico => generated 2755 bytes in 229 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8867|app: 0|req: 1/4] 111.53.177.42 () {40 vars in 729 bytes} [Wed Jun 13 11:52:35 2018] GET /favicon.ico => generated 2755 bytes in 226 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /
+[pid: 8871|app: 0|req: 1/5] 111.53.177.42 () {42 vars in 802 bytes} [Wed Jun 13 11:52:59 2018] GET / => generated 2704 bytes in 129 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 8872)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 8867)...
+Gracefully killing worker 2 (pid: 8868)...
+Gracefully killing worker 3 (pid: 8869)...
+Gracefully killing worker 4 (pid: 8870)...
+Gracefully killing worker 5 (pid: 8871)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /var/www/jzxy_quality
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (/var/www/jzxy_quality/script/uwsgi.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.git
+[uwsgi-static] added mapping for /static => /var/www/jzxy_quality/static
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Jun 13 11:53:52 2018] ***
+compiled with version: 5.4.0 20160609 on 22 December 2017 10:25:14
+os: Linux-4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016
+nodename: VM-218-113-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/jzxy_quality
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/jzxy_quality
+your processes number limit is 3308
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on :8055 fd 3
+uwsgi socket 0 inherited UNIX address /var/www/jzxy_quality/script/uwsgi.sock fd 6
+Python version: 3.5.2 (default, Sep 14 2017, 22:51:06)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1f0fe60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 485712 bytes (474 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1f0fe60 pid: 8864 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 8864)
+spawned uWSGI worker 1 (pid: 9047, cores: 1)
+spawned uWSGI worker 2 (pid: 9048, cores: 1)
+spawned uWSGI worker 3 (pid: 9049, cores: 1)
+spawned uWSGI worker 4 (pid: 9050, cores: 1)
+spawned uWSGI worker 5 (pid: 9051, cores: 1)
+spawned uWSGI http 1 (pid: 9052)
+[pid: 9048|app: 0|req: 1/1] 111.53.177.42 () {44 vars in 833 bytes} [Wed Jun 13 11:53:53 2018] GET / => generated 8185 bytes in 134 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 9047|app: 0|req: 1/2] 111.53.177.42 () {42 vars in 816 bytes} [Wed Jun 13 11:54:29 2018] GET /addinfo => generated 8185 bytes in 121 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9049|app: 0|req: 1/3] 111.53.177.42 () {42 vars in 818 bytes} [Wed Jun 13 11:54:39 2018] GET /addinfo/ => generated 8185 bytes in 118 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 9052)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 9047)...
+Gracefully killing worker 2 (pid: 9048)...
+Gracefully killing worker 3 (pid: 9049)...
+Gracefully killing worker 4 (pid: 9050)...
+Gracefully killing worker 5 (pid: 9051)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /var/www/jzxy_quality
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (/var/www/jzxy_quality/script/uwsgi.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.git
+[uwsgi-static] added mapping for /static => /var/www/jzxy_quality/static
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Jun 13 11:55:13 2018] ***
+compiled with version: 5.4.0 20160609 on 22 December 2017 10:25:14
+os: Linux-4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016
+nodename: VM-218-113-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/jzxy_quality
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/jzxy_quality
+your processes number limit is 3308
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on :8055 fd 3
+uwsgi socket 0 inherited UNIX address /var/www/jzxy_quality/script/uwsgi.sock fd 6
+Python version: 3.5.2 (default, Sep 14 2017, 22:51:06)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x12ade60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 485712 bytes (474 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x12ade60 pid: 8864 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 8864)
+spawned uWSGI worker 1 (pid: 9138, cores: 1)
+spawned uWSGI worker 2 (pid: 9139, cores: 1)
+spawned uWSGI worker 3 (pid: 9140, cores: 1)
+spawned uWSGI worker 4 (pid: 9141, cores: 1)
+spawned uWSGI worker 5 (pid: 9142, cores: 1)
+spawned uWSGI http 1 (pid: 9143)
+[pid: 9140|app: 0|req: 1/1] 111.53.177.42 () {42 vars in 802 bytes} [Wed Jun 13 11:55:20 2018] GET / => generated 8185 bytes in 108 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9141|app: 0|req: 1/2] 111.53.177.42 () {42 vars in 818 bytes} [Wed Jun 13 11:55:25 2018] GET /addinfo/ => generated 13795 bytes in 144 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+[pid: 9142|app: 0|req: 1/3] 111.53.177.42 () {48 vars in 998 bytes} [Wed Jun 13 11:55:30 2018] POST /venify/ => generated 298 bytes in 162 msecs (HTTP/1.1 200) 5 headers in 246 bytes (2 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 9143)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 9138)...
+Gracefully killing worker 2 (pid: 9139)...
+Gracefully killing worker 3 (pid: 9140)...
+Gracefully killing worker 4 (pid: 9141)...
+Gracefully killing worker 5 (pid: 9142)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /var/www/jzxy_quality
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (/var/www/jzxy_quality/script/uwsgi.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.git
+[uwsgi-static] added mapping for /static => /var/www/jzxy_quality/static
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Jun 13 11:56:43 2018] ***
+compiled with version: 5.4.0 20160609 on 22 December 2017 10:25:14
+os: Linux-4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016
+nodename: VM-218-113-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/jzxy_quality
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/jzxy_quality
+your processes number limit is 3308
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on :8055 fd 3
+uwsgi socket 0 inherited UNIX address /var/www/jzxy_quality/script/uwsgi.sock fd 6
+Python version: 3.5.2 (default, Sep 14 2017, 22:51:06)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x156de60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 485712 bytes (474 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x156de60 pid: 8864 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 8864)
+spawned uWSGI worker 1 (pid: 9360, cores: 1)
+spawned uWSGI worker 2 (pid: 9361, cores: 1)
+spawned uWSGI worker 3 (pid: 9362, cores: 1)
+spawned uWSGI worker 4 (pid: 9363, cores: 1)
+spawned uWSGI worker 5 (pid: 9364, cores: 1)
+spawned uWSGI http 1 (pid: 9365)
+[pid: 9362|app: 0|req: 1/1] 111.53.177.42 () {44 vars in 849 bytes} [Wed Jun 13 11:56:45 2018] GET /addinfo/ => generated 13795 bytes in 154 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 1/2] 111.53.177.42 () {48 vars in 998 bytes} [Wed Jun 13 11:56:48 2018] POST /venify/ => generated 298 bytes in 124 msecs (HTTP/1.1 200) 5 headers in 246 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 1/3] 111.53.177.42 () {42 vars in 822 bytes} [Wed Jun 13 11:57:08 2018] GET /se_account => generated 0 bytes in 149 msecs (HTTP/1.1 301) 3 headers in 117 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 1/4] 111.53.177.42 () {42 vars in 824 bytes} [Wed Jun 13 11:57:08 2018] GET /se_account/ => generated 4452 bytes in 121 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 9362|app: 0|req: 2/5] 61.151.225.242 () {40 vars in 680 bytes} [Wed Jun 13 11:57:18 2018] GET /se_account/ => generated 4452 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 9363|app: 0|req: 2/6] 101.226.86.154 () {40 vars in 658 bytes} [Wed Jun 13 11:57:18 2018] GET / => generated 8185 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 9360|app: 0|req: 1/7] 101.226.79.225 () {40 vars in 674 bytes} [Wed Jun 13 11:57:18 2018] GET /addinfo/ => generated 13795 bytes in 148 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 2/8] 223.104.14.54 () {38 vars in 813 bytes} [Wed Jun 13 11:57:26 2018] GET / => generated 8185 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 2/9] 223.104.14.54 () {50 vars in 1107 bytes} [Wed Jun 13 11:57:33 2018] POST / => generated 300 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 3/10] 223.104.14.54 () {50 vars in 1107 bytes} [Wed Jun 13 11:57:35 2018] POST / => generated 300 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 3/11] 223.104.14.54 () {50 vars in 1107 bytes} [Wed Jun 13 11:57:35 2018] POST / => generated 300 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 2/12] 223.104.14.54 () {50 vars in 1107 bytes} [Wed Jun 13 11:57:36 2018] POST / => generated 300 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9364|app: 0|req: 3/13] 223.104.14.54 () {40 vars in 902 bytes} [Wed Jun 13 11:57:45 2018] GET / => generated 8185 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 3/14] 223.104.14.54 () {40 vars in 918 bytes} [Wed Jun 13 11:57:48 2018] GET /addinfo/ => generated 13795 bytes in 40 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 4/15] 223.104.14.54 () {50 vars in 1127 bytes} [Wed Jun 13 11:57:55 2018] POST /venify/ => generated 243 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 246 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 4/16] 117.185.117.54 () {36 vars in 594 bytes} [Wed Jun 13 11:58:17 2018] GET / => generated 8185 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 3/17] 117.144.246.149 () {36 vars in 529 bytes} [Wed Jun 13 11:58:17 2018] GET /addinfo => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 114 bytes (1 switches on core 0)
+[pid: 9364|app: 0|req: 4/18] 120.204.17.72 () {36 vars in 569 bytes} [Wed Jun 13 11:58:17 2018] GET /se_account => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 117 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 4/19] 117.136.4.112 () {38 vars in 817 bytes} [Wed Jun 13 11:59:30 2018] GET / => generated 8185 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 5/20] 117.136.4.112 () {40 vars in 922 bytes} [Wed Jun 13 11:59:35 2018] GET /addinfo/ => generated 13795 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 5/21] 117.136.4.112 () {40 vars in 928 bytes} [Wed Jun 13 11:59:38 2018] GET /se_account/ => generated 4452 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 4/22] 223.104.14.54 () {40 vars in 956 bytes} [Wed Jun 13 12:11:57 2018] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 112 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 5/23] 223.104.14.54 () {40 vars in 958 bytes} [Wed Jun 13 12:11:57 2018] GET /admin/ => generated 0 bytes in 46 msecs (HTTP/1.1 302) 7 headers in 265 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 5/24] 223.104.14.54 () {40 vars in 995 bytes} [Wed Jun 13 12:11:57 2018] GET /admin/login/?next=/admin/ => generated 1652 bytes in 184 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 9362|app: 0|req: 6/25] 223.104.14.54 () {42 vars in 955 bytes} [Wed Jun 13 12:11:58 2018] GET /static/admin/css/base.css => generated 2910 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 9363|app: 0|req: 6/26] 223.104.14.54 () {42 vars in 956 bytes} [Wed Jun 13 12:11:58 2018] GET /static/admin/css/login.css => generated 2910 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 9360|app: 0|req: 5/27] 223.104.14.54 () {40 vars in 962 bytes} [Wed Jun 13 12:12:26 2018] GET /addinfo/ => generated 13795 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 6/28] 223.104.14.54 () {50 vars in 1171 bytes} [Wed Jun 13 12:12:31 2018] POST /venify/ => generated 243 bytes in 29 msecs (HTTP/1.1 200) 5 headers in 246 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 6/29] 117.185.117.52 () {36 vars in 561 bytes} [Wed Jun 13 12:12:40 2018] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 112 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 7/30] 120.204.17.72 () {36 vars in 597 bytes} [Wed Jun 13 12:12:57 2018] GET /admin/login/?next=/admin => generated 1650 bytes in 41 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 7/31] 223.104.14.54 () {44 vars in 882 bytes} [Wed Jun 13 12:13:22 2018] GET /addinfo/ => generated 13795 bytes in 33 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 6/32] 120.92.11.159 () {38 vars in 496 bytes} [Wed Jun 13 12:13:23 2018] GET / => generated 8185 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 9364|app: 0|req: 7/33] 223.104.14.54 () {42 vars in 836 bytes} [Wed Jun 13 12:13:23 2018] GET /favicon.ico => generated 2919 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 9361|app: 0|req: 7/34] 223.104.14.54 () {50 vars in 1059 bytes} [Wed Jun 13 12:13:31 2018] POST /venify/ => generated 243 bytes in 11 msecs (HTTP/1.1 200) 5 headers in 246 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 8/35] 117.136.4.112 () {40 vars in 928 bytes} [Wed Jun 13 12:14:39 2018] GET /se_account/ => generated 4452 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 8/36] 117.136.4.112 () {50 vars in 1144 bytes} [Wed Jun 13 12:14:45 2018] POST /se_account/ => generated 174 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 7/37] 117.136.4.112 () {40 vars in 928 bytes} [Wed Jun 13 12:14:54 2018] GET /se_account/ => generated 4452 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 8/38] 117.136.4.112 () {50 vars in 1144 bytes} [Wed Jun 13 12:15:02 2018] POST /se_account/ => generated 174 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 8/39] 117.136.4.112 () {40 vars in 916 bytes} [Wed Jun 13 12:16:01 2018] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 112 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 9/40] 117.136.4.112 () {40 vars in 918 bytes} [Wed Jun 13 12:16:02 2018] GET /admin/ => generated 0 bytes in 2 msecs (HTTP/1.1 302) 7 headers in 265 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 9/41] 117.136.4.112 () {40 vars in 955 bytes} [Wed Jun 13 12:16:02 2018] GET /admin/login/?next=/admin/ => generated 1652 bytes in 75 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 0)
+Not Found: /404.html
+[pid: 9360|app: 0|req: 8/42] 117.136.4.112 () {42 vars in 915 bytes} [Wed Jun 13 12:16:02 2018] GET /static/admin/css/base.css => generated 2910 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 9364|app: 0|req: 9/43] 117.136.4.112 () {42 vars in 916 bytes} [Wed Jun 13 12:16:02 2018] GET /static/admin/css/login.css => generated 2910 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 9361|app: 0|req: 9/44] 117.136.4.112 () {50 vars in 1210 bytes} [Wed Jun 13 12:16:30 2018] POST /admin/login/?next=/admin/ => generated 0 bytes in 59 msecs (HTTP/1.1 302) 9 headers in 531 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 10/45] 117.136.4.112 () {44 vars in 1060 bytes} [Wed Jun 13 12:16:30 2018] GET /admin/ => generated 2739 bytes in 33 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 9363|app: 0|req: 10/46] 117.136.4.112 () {42 vars in 945 bytes} [Wed Jun 13 12:16:30 2018] GET /static/admin/css/dashboard.css => generated 2910 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 9360|app: 0|req: 9/47] 117.136.4.112 () {42 vars in 940 bytes} [Wed Jun 13 12:16:30 2018] GET /static/admin/css/base.css => generated 2910 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 9364|app: 0|req: 10/48] 117.136.4.112 () {40 vars in 950 bytes} [Wed Jun 13 12:16:58 2018] GET / => generated 8185 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 10/49] 120.204.17.70 () {36 vars in 597 bytes} [Wed Jun 13 12:17:02 2018] GET /admin/login/?next=/admin => generated 1650 bytes in 23 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 11/50] 117.136.4.112 () {50 vars in 1155 bytes} [Wed Jun 13 12:17:04 2018] POST / => generated 701 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 11/51] 117.136.4.112 () {40 vars in 966 bytes} [Wed Jun 13 12:18:56 2018] GET /addinfo/ => generated 13795 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 10/52] 117.136.4.112 () {50 vars in 1175 bytes} [Wed Jun 13 12:19:02 2018] POST /venify/ => generated 298 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 246 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 11/53] 117.136.4.112 () {40 vars in 950 bytes} [Wed Jun 13 12:31:17 2018] GET / => generated 8185 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 11/54] 59.36.132.173 () {36 vars in 474 bytes} [Wed Jun 13 12:31:24 2018] GET / => generated 8185 bytes in 2 msecs (HTTP/1.0 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 12/55] 101.226.233.146 () {36 vars in 712 bytes} [Wed Jun 13 12:34:10 2018] GET / => generated 8185 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 12/56] 101.227.143.150 () {36 vars in 628 bytes} [Wed Jun 13 12:34:10 2018] GET / => generated 8185 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 9360|app: 0|req: 11/57] 223.104.14.54 () {40 vars in 946 bytes} [Wed Jun 13 12:34:29 2018] GET / => generated 8185 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 12/58] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:34:41 2018] POST / => generated 300 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 12/59] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:34:44 2018] POST / => generated 300 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 13/60] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:34:47 2018] POST / => generated 300 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 13/61] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:34:48 2018] POST / => generated 300 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 12/62] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:34:48 2018] POST / => generated 300 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 13/63] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:34:49 2018] POST / => generated 300 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9361|app: 0|req: 13/64] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:34:49 2018] POST / => generated 300 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9362|app: 0|req: 14/65] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:34:49 2018] POST / => generated 300 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9363|app: 0|req: 14/66] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:34:49 2018] POST / => generated 300 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9360|app: 0|req: 13/67] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:34:49 2018] POST / => generated 300 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9364|app: 0|req: 14/68] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:34:52 2018] POST / => generated 300 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 14/69] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:34:53 2018] POST / => generated 300 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 15/70] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:34:53 2018] POST / => generated 300 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9363|app: 0|req: 15/71] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:34:53 2018] POST / => generated 300 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 14/72] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:34:53 2018] POST / => generated 300 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9364|app: 0|req: 15/73] 117.136.4.112 () {40 vars in 950 bytes} [Wed Jun 13 12:35:12 2018] GET / => generated 8185 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 15/74] 117.136.4.112 () {50 vars in 1155 bytes} [Wed Jun 13 12:35:20 2018] POST / => generated 701 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 16/75] 223.104.14.54 () {40 vars in 946 bytes} [Wed Jun 13 12:35:25 2018] GET / => generated 8185 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 16/76] 117.185.117.54 () {36 vars in 630 bytes} [Wed Jun 13 12:35:27 2018] GET / => generated 8185 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 15/77] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:35:31 2018] POST / => generated 300 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 16/78] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:35:32 2018] POST / => generated 300 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 16/79] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:35:32 2018] POST / => generated 300 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9362|app: 0|req: 17/80] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:35:32 2018] POST / => generated 300 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9363|app: 0|req: 17/81] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:35:32 2018] POST / => generated 300 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9360|app: 0|req: 16/82] 223.104.14.54 () {40 vars in 962 bytes} [Wed Jun 13 12:35:36 2018] GET /addinfo/ => generated 13795 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 17/83] 117.136.4.112 () {50 vars in 1155 bytes} [Wed Jun 13 12:35:37 2018] POST / => generated 336 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 17/84] 223.104.14.54 () {50 vars in 1171 bytes} [Wed Jun 13 12:35:45 2018] POST /venify/ => generated 243 bytes in 24 msecs (HTTP/1.1 200) 5 headers in 246 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 18/85] 223.104.14.54 () {50 vars in 1175 bytes} [Wed Jun 13 12:35:58 2018] POST /addinfo/ => generated 13 bytes in 12 msecs (HTTP/1.1 200) 4 headers in 114 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 18/86] 223.104.14.54 () {42 vars in 1010 bytes} [Wed Jun 13 12:36:00 2018] GET /search/ => generated 8185 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 17/87] 223.104.14.54 () {40 vars in 946 bytes} [Wed Jun 13 12:36:04 2018] GET / => generated 8185 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 18/88] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:12 2018] POST / => generated 330 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 18/89] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:13 2018] POST / => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 19/90] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:13 2018] POST / => generated 330 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 19/91] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:14 2018] POST / => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 18/92] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:14 2018] POST / => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9364|app: 0|req: 19/93] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:15 2018] POST / => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9361|app: 0|req: 19/94] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:15 2018] POST / => generated 330 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9362|app: 0|req: 20/95] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:15 2018] POST / => generated 330 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9363|app: 0|req: 20/96] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:15 2018] POST / => generated 330 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9360|app: 0|req: 19/97] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:15 2018] POST / => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 20/98] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:16 2018] POST / => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9361|app: 0|req: 20/99] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:16 2018] POST / => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9362|app: 0|req: 21/100] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:16 2018] POST / => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9363|app: 0|req: 21/101] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:20 2018] POST / => generated 294 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 20/102] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:20 2018] POST / => generated 294 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9364|app: 0|req: 21/103] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:21 2018] POST / => generated 294 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9361|app: 0|req: 21/104] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:21 2018] POST / => generated 294 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9362|app: 0|req: 22/105] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:21 2018] POST / => generated 294 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9363|app: 0|req: 22/106] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:21 2018] POST / => generated 294 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9360|app: 0|req: 21/107] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 12:36:28 2018] POST / => generated 701 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 22/108] 117.136.4.112 () {40 vars in 950 bytes} [Wed Jun 13 12:36:36 2018] GET / => generated 8185 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 22/109] 117.136.4.112 () {50 vars in 1155 bytes} [Wed Jun 13 12:36:44 2018] POST / => generated 330 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 23/110] 117.136.4.112 () {50 vars in 1155 bytes} [Wed Jun 13 12:36:45 2018] POST / => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 23/111] 117.136.4.112 () {50 vars in 1155 bytes} [Wed Jun 13 12:36:45 2018] POST / => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9360|app: 0|req: 22/112] 117.136.4.112 () {50 vars in 1155 bytes} [Wed Jun 13 12:36:45 2018] POST / => generated 330 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9364|app: 0|req: 23/113] 117.136.4.112 () {50 vars in 1155 bytes} [Wed Jun 13 12:36:45 2018] POST / => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9361|app: 0|req: 23/114] 117.136.4.112 () {40 vars in 966 bytes} [Wed Jun 13 12:36:48 2018] GET /addinfo/ => generated 13795 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 24/115] 117.136.4.112 () {50 vars in 1175 bytes} [Wed Jun 13 12:36:53 2018] POST /venify/ => generated 261 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 246 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 24/116] 117.185.117.54 () {36 vars in 563 bytes} [Wed Jun 13 12:36:59 2018] GET /search => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 113 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 23/117] 117.136.4.112 () {50 vars in 1179 bytes} [Wed Jun 13 12:37:00 2018] POST /addinfo/ => generated 13 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 114 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 24/118] 117.136.4.112 () {42 vars in 1014 bytes} [Wed Jun 13 12:37:02 2018] GET /search/ => generated 8185 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 24/119] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:08 2018] POST /search/ => generated 330 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 25/120] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:12 2018] POST /search/ => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 25/121] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:12 2018] POST /search/ => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9360|app: 0|req: 24/122] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:12 2018] POST /search/ => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9364|app: 0|req: 25/123] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:12 2018] POST /search/ => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9361|app: 0|req: 25/124] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:12 2018] POST /search/ => generated 330 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9362|app: 0|req: 26/125] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:13 2018] POST /search/ => generated 330 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9363|app: 0|req: 26/126] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:13 2018] POST /search/ => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 25/127] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:13 2018] POST /search/ => generated 330 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9364|app: 0|req: 26/128] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:13 2018] POST /search/ => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9361|app: 0|req: 26/129] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:13 2018] POST /search/ => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9362|app: 0|req: 27/130] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:20 2018] POST /search/ => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 27/131] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:21 2018] POST /search/ => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 26/132] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:21 2018] POST /search/ => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9364|app: 0|req: 27/133] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:22 2018] POST /search/ => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9361|app: 0|req: 27/134] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:22 2018] POST /search/ => generated 330 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9362|app: 0|req: 28/135] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:22 2018] POST /search/ => generated 330 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9363|app: 0|req: 28/136] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:22 2018] POST /search/ => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9360|app: 0|req: 27/137] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:26 2018] POST /search/ => generated 330 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 28/138] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:26 2018] POST /search/ => generated 330 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9361|app: 0|req: 28/139] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:27 2018] POST /search/ => generated 330 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9362|app: 0|req: 29/140] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:27 2018] POST /search/ => generated 330 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9363|app: 0|req: 29/141] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:27 2018] POST /search/ => generated 330 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 9360|app: 0|req: 28/142] 117.136.4.112 () {50 vars in 1176 bytes} [Wed Jun 13 12:37:30 2018] POST /search/ => generated 701 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 29/143] 180.163.28.123 () {34 vars in 577 bytes} [Wed Jun 13 12:40:23 2018] GET /search => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 113 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 29/144] 117.136.4.112 () {40 vars in 950 bytes} [Wed Jun 13 12:44:57 2018] GET / => generated 8185 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 30/145] 117.136.4.112 () {50 vars in 1155 bytes} [Wed Jun 13 12:45:04 2018] POST / => generated 330 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 30/146] 120.204.17.70 () {38 vars in 623 bytes} [Wed Jun 13 12:54:03 2018] GET /search => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 113 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 29/147] 120.204.17.70 () {40 vars in 673 bytes} [Wed Jun 13 12:54:10 2018] GET /search/ => generated 8185 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 30/148] 111.53.177.42 () {42 vars in 802 bytes} [Wed Jun 13 13:09:11 2018] GET / => generated 8191 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 9361|app: 0|req: 30/149] 111.53.177.42 () {40 vars in 789 bytes} [Wed Jun 13 13:09:11 2018] GET /favicon.ico => generated 2919 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 9362|app: 0|req: 31/150] 111.53.177.42 () {48 vars in 978 bytes} [Wed Jun 13 13:09:24 2018] POST / => generated 701 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 31/151] 111.53.177.42 () {48 vars in 978 bytes} [Wed Jun 13 13:09:29 2018] POST / => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 30/152] 111.53.177.42 () {48 vars in 978 bytes} [Wed Jun 13 13:09:38 2018] POST / => generated 336 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 31/153] 111.53.177.42 () {48 vars in 978 bytes} [Wed Jun 13 13:10:31 2018] POST / => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 31/154] 111.53.177.42 () {42 vars in 802 bytes} [Wed Jun 13 13:10:38 2018] GET / => generated 8191 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9362|app: 0|req: 32/155] 111.53.177.42 () {48 vars in 978 bytes} [Wed Jun 13 13:10:40 2018] POST / => generated 330 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9363|app: 0|req: 32/156] 117.185.117.52 () {36 vars in 564 bytes} [Wed Jun 13 13:10:51 2018] GET /addinfo => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 114 bytes (2 switches on core 0)
+[pid: 9360|app: 0|req: 31/157] 111.53.177.42 () {48 vars in 978 bytes} [Wed Jun 13 13:11:08 2018] POST / => generated 701 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 9364|app: 0|req: 32/158] 111.53.177.42 () {42 vars in 802 bytes} [Wed Jun 13 13:11:18 2018] GET / => generated 8191 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 9361|app: 0|req: 32/159] 111.53.177.42 () {48 vars in 978 bytes} [Wed Jun 13 13:11:21 2018] POST / => generated 336 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 9365)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 9360)...
+Gracefully killing worker 2 (pid: 9361)...
+Gracefully killing worker 3 (pid: 9362)...
+Gracefully killing worker 4 (pid: 9363)...
+Gracefully killing worker 5 (pid: 9364)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /var/www/jzxy_quality
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (/var/www/jzxy_quality/script/uwsgi.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.git
+[uwsgi-static] added mapping for /static => /var/www/jzxy_quality/static
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Jun 13 13:13:35 2018] ***
+compiled with version: 5.4.0 20160609 on 22 December 2017 10:25:14
+os: Linux-4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016
+nodename: VM-218-113-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/jzxy_quality
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/jzxy_quality
+your processes number limit is 3308
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on :8055 fd 3
+uwsgi socket 0 inherited UNIX address /var/www/jzxy_quality/script/uwsgi.sock fd 6
+Python version: 3.5.2 (default, Sep 14 2017, 22:51:06)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1810e60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 485712 bytes (474 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1810e60 pid: 8864 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 8864)
+spawned uWSGI worker 1 (pid: 13963, cores: 1)
+spawned uWSGI worker 2 (pid: 13964, cores: 1)
+spawned uWSGI worker 3 (pid: 13965, cores: 1)
+spawned uWSGI worker 4 (pid: 13966, cores: 1)
+spawned uWSGI worker 5 (pid: 13967, cores: 1)
+spawned uWSGI http 1 (pid: 13968)
+[pid: 13965|app: 0|req: 1/1] 111.53.177.42 () {42 vars in 802 bytes} [Wed Jun 13 13:13:38 2018] GET / => generated 8078 bytes in 127 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 13967|app: 0|req: 1/2] 111.53.177.42 () {48 vars in 978 bytes} [Wed Jun 13 13:13:41 2018] POST / => generated 330 bytes in 114 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 13964|app: 0|req: 1/3] 111.53.177.42 () {48 vars in 978 bytes} [Wed Jun 13 13:13:50 2018] POST / => generated 701 bytes in 138 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 13963|app: 0|req: 1/4] 111.53.177.42 () {48 vars in 978 bytes} [Wed Jun 13 13:13:54 2018] POST / => generated 330 bytes in 167 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 13966|app: 0|req: 1/5] 111.53.177.42 () {42 vars in 802 bytes} [Wed Jun 13 13:14:47 2018] GET / => generated 8078 bytes in 149 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 13968)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 13963)...
+Gracefully killing worker 2 (pid: 13964)...
+Gracefully killing worker 3 (pid: 13965)...
+Gracefully killing worker 4 (pid: 13966)...
+Gracefully killing worker 5 (pid: 13967)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /var/www/jzxy_quality
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (/var/www/jzxy_quality/script/uwsgi.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.git
+[uwsgi-static] added mapping for /static => /var/www/jzxy_quality/static
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Jun 13 13:16:33 2018] ***
+compiled with version: 5.4.0 20160609 on 22 December 2017 10:25:14
+os: Linux-4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016
+nodename: VM-218-113-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/jzxy_quality
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/jzxy_quality
+your processes number limit is 3308
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on :8055 fd 3
+uwsgi socket 0 inherited UNIX address /var/www/jzxy_quality/script/uwsgi.sock fd 6
+Python version: 3.5.2 (default, Sep 14 2017, 22:51:06)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x2588e60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 485712 bytes (474 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2588e60 pid: 8864 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 8864)
+spawned uWSGI worker 1 (pid: 14134, cores: 1)
+spawned uWSGI worker 2 (pid: 14135, cores: 1)
+spawned uWSGI worker 3 (pid: 14136, cores: 1)
+spawned uWSGI worker 4 (pid: 14137, cores: 1)
+spawned uWSGI worker 5 (pid: 14138, cores: 1)
+spawned uWSGI http 1 (pid: 14139)
+[pid: 14137|app: 0|req: 1/1] 111.53.177.42 () {44 vars in 833 bytes} [Wed Jun 13 13:16:35 2018] GET / => generated 8111 bytes in 108 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 14135|app: 0|req: 1/2] 111.53.177.42 () {48 vars in 978 bytes} [Wed Jun 13 13:16:38 2018] POST / => generated 300 bytes in 117 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 14138|app: 0|req: 1/3] 111.53.177.42 () {48 vars in 978 bytes} [Wed Jun 13 13:16:44 2018] POST / => generated 701 bytes in 121 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 14136|app: 0|req: 1/4] 111.53.177.42 () {48 vars in 978 bytes} [Wed Jun 13 13:16:51 2018] POST / => generated 330 bytes in 118 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 14134|app: 0|req: 1/5] 111.53.177.42 () {42 vars in 814 bytes} [Wed Jun 13 13:18:45 2018] GET /xadmin => generated 0 bytes in 149 msecs (HTTP/1.1 301) 3 headers in 113 bytes (2 switches on core 0)
+[pid: 14137|app: 0|req: 2/6] 111.53.177.42 () {42 vars in 816 bytes} [Wed Jun 13 13:18:46 2018] GET /xadmin/ => generated 4163 bytes in 108 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 14135|app: 0|req: 2/7] 111.53.177.42 () {42 vars in 784 bytes} [Wed Jun 13 13:18:46 2018] GET /xadmin/jsi18n/ => generated 4170 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 0)
+[pid: 14138|app: 0|req: 2/8] 111.53.177.42 () {48 vars in 982 bytes} [Wed Jun 13 13:19:00 2018] POST /xadmin/ => generated 0 bytes in 95 msecs (HTTP/1.1 302) 9 headers in 532 bytes (2 switches on core 0)
+[pid: 14136|app: 0|req: 2/9] 111.53.177.42 () {44 vars in 865 bytes} [Wed Jun 13 13:19:01 2018] GET /xadmin/ => generated 12563 bytes in 253 msecs (HTTP/1.1 200) 6 headers in 228 bytes (1 switches on core 0)
+[pid: 14134|app: 0|req: 2/10] 111.53.177.42 () {42 vars in 784 bytes} [Wed Jun 13 13:19:01 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 14137|app: 0|req: 3/11] 111.53.177.42 () {44 vars in 909 bytes} [Wed Jun 13 13:19:04 2018] GET /xadmin/school_student/praise/ => generated 34156 bytes in 216 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 14135|app: 0|req: 3/12] 111.53.177.42 () {42 vars in 806 bytes} [Wed Jun 13 13:19:05 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 115 bytes (2 switches on core 0)
+[pid: 14138|app: 0|req: 3/13] 111.53.177.42 () {44 vars in 941 bytes} [Wed Jun 13 13:19:07 2018] GET /xadmin/school_student/publishment/ => generated 34268 bytes in 230 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 14136|app: 0|req: 3/14] 111.53.177.42 () {42 vars in 811 bytes} [Wed Jun 13 13:19:07 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 14134|app: 0|req: 3/15] 111.53.177.42 () {44 vars in 964 bytes} [Wed Jun 13 13:19:15 2018] GET /xadmin/school_student/publishment/2/update/ => generated 710635 bytes in 3509 msecs (HTTP/1.1 200) 7 headers in 383 bytes (4 switches on core 0)
+[pid: 14137|app: 0|req: 4/16] 111.53.177.42 () {42 vars in 820 bytes} [Wed Jun 13 13:19:18 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 115 bytes (2 switches on core 0)
+[pid: 14135|app: 0|req: 4/17] 111.53.177.42 () {44 vars in 941 bytes} [Wed Jun 13 13:19:43 2018] GET /xadmin/school_student/publishment/ => generated 34268 bytes in 112 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 14139)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 14134)...
+Gracefully killing worker 2 (pid: 14135)...
+Gracefully killing worker 3 (pid: 14136)...
+Gracefully killing worker 4 (pid: 14137)...
+Gracefully killing worker 5 (pid: 14138)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /var/www/jzxy_quality
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (/var/www/jzxy_quality/script/uwsgi.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.git
+[uwsgi-static] added mapping for /static => /var/www/jzxy_quality/static
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Jun 13 13:22:15 2018] ***
+compiled with version: 5.4.0 20160609 on 22 December 2017 10:25:14
+os: Linux-4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016
+nodename: VM-218-113-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/jzxy_quality
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/jzxy_quality
+your processes number limit is 3308
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on :8055 fd 3
+uwsgi socket 0 inherited UNIX address /var/www/jzxy_quality/script/uwsgi.sock fd 6
+Python version: 3.5.2 (default, Sep 14 2017, 22:51:06)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xfa4e60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 485712 bytes (474 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xfa4e60 pid: 8864 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 8864)
+spawned uWSGI worker 1 (pid: 14597, cores: 1)
+spawned uWSGI worker 2 (pid: 14598, cores: 1)
+spawned uWSGI worker 3 (pid: 14599, cores: 1)
+spawned uWSGI worker 4 (pid: 14600, cores: 1)
+spawned uWSGI worker 5 (pid: 14601, cores: 1)
+spawned uWSGI http 1 (pid: 14602)
+[pid: 14599|app: 0|req: 1/1] 111.53.177.42 () {46 vars in 972 bytes} [Wed Jun 13 13:22:22 2018] GET /xadmin/school_student/publishment/ => generated 34328 bytes in 303 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 14598|app: 0|req: 1/2] 111.53.177.42 () {44 vars in 842 bytes} [Wed Jun 13 13:22:23 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 116 msecs (HTTP/1.1 200) 4 headers in 115 bytes (2 switches on core 0)
+[pid: 14601|app: 0|req: 1/3] 111.53.177.42 () {44 vars in 936 bytes} [Wed Jun 13 13:22:29 2018] GET /xadmin/school_student/praise/ => generated 34174 bytes in 353 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 14597|app: 0|req: 1/4] 111.53.177.42 () {42 vars in 806 bytes} [Wed Jun 13 13:22:30 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 113 msecs (HTTP/1.1 200) 4 headers in 115 bytes (2 switches on core 0)
+[pid: 14600|app: 0|req: 1/5] 111.53.177.42 () {44 vars in 949 bytes} [Wed Jun 13 13:22:32 2018] GET /xadmin/school_student/praise/2/update/ => generated 710601 bytes in 3503 msecs (HTTP/1.1 200) 7 headers in 383 bytes (4 switches on core 0)
+[pid: 14599|app: 0|req: 2/6] 111.53.177.42 () {42 vars in 815 bytes} [Wed Jun 13 13:22:36 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 115 bytes (2 switches on core 0)
+[pid: 14598|app: 0|req: 2/7] 223.104.14.54 () {40 vars in 946 bytes} [Wed Jun 13 14:51:49 2018] GET / => generated 8111 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 14601|app: 0|req: 2/8] 223.104.14.54 () {50 vars in 1151 bytes} [Wed Jun 13 14:52:11 2018] POST / => generated 330 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 14597|app: 0|req: 2/9] 223.104.14.47 () {40 vars in 945 bytes} [Wed Jun 13 16:21:31 2018] GET / => generated 8111 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 14600|app: 0|req: 2/10] 223.104.14.47 () {50 vars in 1150 bytes} [Wed Jun 13 16:21:40 2018] POST / => generated 330 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 3/11] 101.226.35.225 () {44 vars in 788 bytes} [Wed Jun 13 19:26:40 2018] GET /wp-includes/js/comment-reply.min.js => generated 58559 bytes in 60 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 3/12] 101.226.35.225 () {44 vars in 768 bytes} [Wed Jun 13 19:26:41 2018] GET /skins/vector/csshover.htc => generated 58439 bytes in 58 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 3/13] 101.226.35.225 () {44 vars in 746 bytes} [Wed Jun 13 19:26:42 2018] GET /misc/states.js => generated 58307 bytes in 70 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 3/14] 101.226.35.225 () {44 vars in 742 bytes} [Wed Jun 13 19:26:43 2018] GET /static/js/md5.js => generated 58243 bytes in 79 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 3/15] 101.226.35.225 () {44 vars in 752 bytes} [Wed Jun 13 19:26:44 2018] GET /include/js/md5.js => generated 58343 bytes in 62 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 4/16] 101.226.35.225 () {44 vars in 758 bytes} [Wed Jun 13 19:26:45 2018] GET /include/js/common.js => generated 58379 bytes in 112 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 4/17] 101.226.35.225 () {44 vars in 754 bytes} [Wed Jun 13 19:26:46 2018] GET /include/js/ajax.js => generated 58355 bytes in 47 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 4/18] 101.226.35.225 () {44 vars in 784 bytes} [Wed Jun 13 19:26:47 2018] GET /res/js/dev/pages/common/global.js => generated 58535 bytes in 95 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 4/19] 101.226.35.225 () {44 vars in 752 bytes} [Wed Jun 13 19:26:48 2018] GET /js/wind_editor.js => generated 58343 bytes in 46 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 4/20] 101.226.35.225 () {44 vars in 792 bytes} [Wed Jun 13 19:26:50 2018] GET /styles/prosilver/template/forum_fn.js => generated 58583 bytes in 50 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 5/21] 101.226.35.225 () {44 vars in 802 bytes} [Wed Jun 13 19:26:51 2018] GET /styles/prosilver/template/styleswitcher.js => generated 58643 bytes in 43 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 5/22] 101.226.35.225 () {44 vars in 762 bytes} [Wed Jun 13 19:26:52 2018] GET /editor/ubb/uploader.js => generated 58403 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 5/23] 101.226.35.225 () {44 vars in 770 bytes} [Wed Jun 13 19:26:53 2018] GET /template/default/style.css => generated 58451 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 5/24] 101.226.35.225 () {44 vars in 744 bytes} [Wed Jun 13 19:26:54 2018] GET /static/js/reset.js => generated 58245 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 5/25] 101.226.35.225 () {44 vars in 756 bytes} [Wed Jun 13 19:26:55 2018] GET /images/js/common.js => generated 58367 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 6/26] 101.226.35.225 () {44 vars in 764 bytes} [Wed Jun 13 19:26:56 2018] GET /templets/style/dede.css => generated 58415 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 6/27] 101.226.35.225 () {44 vars in 758 bytes} [Wed Jun 13 19:26:57 2018] GET /include/dedeajax2.js => generated 58379 bytes in 43 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 6/28] 101.226.35.225 () {44 vars in 760 bytes} [Wed Jun 13 19:26:58 2018] GET /images/default/inc.js => generated 58391 bytes in 37 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 6/29] 101.226.35.225 () {44 vars in 760 bytes} [Wed Jun 13 19:26:59 2018] GET /js/lang/core/zh-cn.js => generated 58391 bytes in 67 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 6/30] 101.226.35.225 () {44 vars in 758 bytes} [Wed Jun 13 19:27:00 2018] GET /js/lang/cms/zh-cn.js => generated 58379 bytes in 76 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 7/31] 101.226.35.225 () {44 vars in 768 bytes} [Wed Jun 13 19:27:02 2018] GET /d/js/acmsd/ecms_dialog.js => generated 58439 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 7/32] 101.226.35.225 () {44 vars in 764 bytes} [Wed Jun 13 19:27:03 2018] GET /skin/default/js/tabs.js => generated 58415 bytes in 52 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 7/33] 101.226.35.225 () {44 vars in 748 bytes} [Wed Jun 13 19:27:04 2018] GET /media/system/js/tab.js => generated 58249 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 7/34] 101.226.35.225 () {44 vars in 754 bytes} [Wed Jun 13 19:27:05 2018] GET /media/system/css/mootree.css => generated 58255 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 7/35] 101.226.35.225 () {44 vars in 750 bytes} [Wed Jun 13 19:27:06 2018] GET /lang/zh/front.js => generated 58331 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 8/36] 101.226.35.225 () {44 vars in 768 bytes} [Wed Jun 13 19:27:07 2018] GET /style/default/content.css => generated 58439 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 8/37] 101.226.35.225 () {44 vars in 748 bytes} [Wed Jun 13 19:27:08 2018] GET /lang/zh/edit.js => generated 58319 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 8/38] 101.226.35.225 () {44 vars in 738 bytes} [Wed Jun 13 19:27:10 2018] GET /rockmongo/ => generated 58259 bytes in 37 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 8/39] 101.226.35.225 () {44 vars in 744 bytes} [Wed Jun 13 19:27:11 2018] GET /server-status => generated 58295 bytes in 48 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 8/40] 101.226.35.225 () {44 vars in 746 bytes} [Wed Jun 13 19:27:12 2018] GET /ueditor.all.js => generated 58307 bytes in 46 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 9/41] 101.226.35.225 () {44 vars in 770 bytes} [Wed Jun 13 19:27:13 2018] GET /wikilib.d/PmWiki.ChangeLog => generated 58451 bytes in 45 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 9/42] 101.226.35.225 () {44 vars in 782 bytes} [Wed Jun 13 19:27:14 2018] GET /4e5e5d7364f443e28fbf0d3ae744a59a => generated 58523 bytes in 90 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 9/43] 101.226.35.225 () {44 vars in 734 bytes} [Wed Jun 13 19:27:15 2018] GET /jenkins/ => generated 58235 bytes in 49 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 9/44] 101.226.35.225 () {44 vars in 772 bytes} [Wed Jun 13 19:27:16 2018] GET /console/login/LoginForm.jsp => generated 58463 bytes in 88 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 9/45] 101.226.35.225 () {44 vars in 728 bytes} [Wed Jun 13 19:27:17 2018] GET /solr/ => generated 58199 bytes in 43 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 10/46] 101.226.35.225 () {44 vars in 718 bytes} [Wed Jun 13 19:27:18 2018] GET / => generated 58139 bytes in 45 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+[pid: 14598|app: 0|req: 10/47] 101.226.79.232 () {36 vars in 550 bytes} [Wed Jun 13 20:49:34 2018] GET / => generated 8111 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 14601|app: 0|req: 10/48] 223.104.14.66 () {38 vars in 805 bytes} [Wed Jun 13 22:08:32 2018] GET / => generated 8111 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 14597|app: 0|req: 10/49] 223.104.14.66 () {40 vars in 894 bytes} [Wed Jun 13 22:16:23 2018] GET / => generated 8111 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 14600|app: 0|req: 10/50] 223.104.14.66 () {50 vars in 1123 bytes} [Wed Jun 13 22:16:34 2018] POST / => generated 701 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 14599|app: 0|req: 11/51] 223.104.14.66 () {40 vars in 894 bytes} [Wed Jun 13 22:17:10 2018] GET / => generated 8111 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 14598|app: 0|req: 11/52] 223.104.14.66 () {50 vars in 1123 bytes} [Wed Jun 13 22:17:20 2018] POST / => generated 312 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 14601|app: 0|req: 11/53] 223.104.14.66 () {40 vars in 894 bytes} [Wed Jun 13 22:17:40 2018] GET / => generated 8111 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 14597|app: 0|req: 11/54] 223.104.14.66 () {50 vars in 1123 bytes} [Wed Jun 13 22:17:49 2018] POST / => generated 701 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 14600|app: 0|req: 11/55] 123.151.77.91 () {42 vars in 888 bytes} [Wed Jun 13 22:21:54 2018] GET / => generated 8111 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 14599|app: 0|req: 12/56] 223.104.14.66 () {42 vars in 917 bytes} [Wed Jun 13 22:21:56 2018] GET /favicon.ico => generated 2919 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 14598|app: 0|req: 12/57] 123.151.77.91 () {44 vars in 993 bytes} [Wed Jun 13 22:22:02 2018] GET /addinfo/ => generated 13795 bytes in 56 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 14601|app: 0|req: 12/58] 223.104.14.66 () {42 vars in 925 bytes} [Wed Jun 13 22:22:03 2018] GET /favicon.ico => generated 2919 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 14597|app: 0|req: 12/59] 123.151.77.91 () {54 vars in 1190 bytes} [Wed Jun 13 22:22:10 2018] POST /venify/ => generated 255 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 246 bytes (2 switches on core 0)
+[pid: 14600|app: 0|req: 12/60] 123.151.77.91 () {54 vars in 1238 bytes} [Wed Jun 13 22:23:01 2018] POST /addinfo/ => generated 13 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 114 bytes (2 switches on core 0)
+[pid: 14599|app: 0|req: 13/61] 123.151.77.91 () {46 vars in 1085 bytes} [Wed Jun 13 22:23:02 2018] GET /search/ => generated 8111 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 14598|app: 0|req: 13/62] 123.151.77.91 () {54 vars in 1235 bytes} [Wed Jun 13 22:23:10 2018] POST /search/ => generated 324 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 14601|app: 0|req: 13/63] 123.151.77.91 () {44 vars in 1037 bytes} [Wed Jun 13 22:23:14 2018] GET /addinfo/ => generated 13795 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+[pid: 14597|app: 0|req: 13/64] 123.151.77.91 () {54 vars in 1234 bytes} [Wed Jun 13 22:23:16 2018] POST /venify/ => generated 255 bytes in 11 msecs (HTTP/1.1 200) 5 headers in 246 bytes (2 switches on core 0)
+[pid: 14600|app: 0|req: 13/65] 123.151.77.91 () {44 vars in 1021 bytes} [Wed Jun 13 22:23:22 2018] GET / => generated 8111 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 14599|app: 0|req: 14/66] 223.104.14.66 () {42 vars in 961 bytes} [Wed Jun 13 22:23:23 2018] GET /favicon.ico => generated 2919 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 14598|app: 0|req: 14/67] 123.151.77.91 () {54 vars in 1214 bytes} [Wed Jun 13 22:23:32 2018] POST / => generated 324 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 14601|app: 0|req: 14/68] 61.151.178.177 () {36 vars in 609 bytes} [Wed Jun 13 22:24:02 2018] GET /search => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 113 bytes (2 switches on core 0)
+[pid: 14597|app: 0|req: 14/69] 180.163.28.123 () {34 vars in 580 bytes} [Wed Jun 13 22:27:35 2018] GET /search => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 113 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 14/70] 183.57.54.43 () {26 vars in 284 bytes} [Sat Jun 16 21:56:46 2018] GET / => generated 56474 bytes in 179 msecs (HTTP/1.0 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: 'VM-218-113-ubuntu:8055'. You may need to add 'vm-218-113-ubuntu' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 15/71] 183.57.54.43 () {22 vars in 227 bytes} [Sat Jun 16 21:56:51 2018] GET / => generated 56118 bytes in 79 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'VM-218-113-ubuntu:8055'. You may need to add 'vm-218-113-ubuntu' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 15/72] 183.57.54.43 () {22 vars in 226 bytes} [Sat Jun 16 21:57:02 2018] GET / => generated 56117 bytes in 69 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 15/73] 183.57.54.43 () {26 vars in 284 bytes} [Tue Jun 19 19:40:56 2018] GET / => generated 56474 bytes in 189 msecs (HTTP/1.0 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: 'VM-218-113-ubuntu:8055'. You may need to add 'vm-218-113-ubuntu' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 15/74] 183.57.54.43 () {22 vars in 227 bytes} [Tue Jun 19 19:41:01 2018] GET / => generated 56118 bytes in 174 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'VM-218-113-ubuntu:8055'. You may need to add 'vm-218-113-ubuntu' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 15/75] 183.57.54.43 () {22 vars in 227 bytes} [Tue Jun 19 19:41:12 2018] GET / => generated 56118 bytes in 78 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 16/76] 101.226.35.225 () {44 vars in 788 bytes} [Thu Jun 21 03:59:43 2018] GET /wp-includes/js/comment-reply.min.js => generated 58559 bytes in 147 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 16/77] 101.226.35.225 () {44 vars in 768 bytes} [Thu Jun 21 03:59:44 2018] GET /skins/vector/csshover.htc => generated 58439 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 16/78] 101.226.35.225 () {44 vars in 746 bytes} [Thu Jun 21 03:59:45 2018] GET /misc/states.js => generated 58307 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 16/79] 101.226.35.225 () {44 vars in 742 bytes} [Thu Jun 21 03:59:46 2018] GET /static/js/md5.js => generated 58243 bytes in 48 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 16/80] 101.226.35.225 () {44 vars in 752 bytes} [Thu Jun 21 03:59:46 2018] GET /include/js/md5.js => generated 58343 bytes in 60 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 17/81] 101.226.35.225 () {44 vars in 758 bytes} [Thu Jun 21 03:59:47 2018] GET /include/js/common.js => generated 58379 bytes in 43 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 17/82] 101.226.35.225 () {44 vars in 754 bytes} [Thu Jun 21 03:59:48 2018] GET /include/js/ajax.js => generated 58355 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 17/83] 101.226.35.225 () {44 vars in 784 bytes} [Thu Jun 21 03:59:49 2018] GET /res/js/dev/pages/common/global.js => generated 58535 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 17/84] 101.226.35.225 () {44 vars in 752 bytes} [Thu Jun 21 03:59:50 2018] GET /js/wind_editor.js => generated 58343 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 17/85] 101.226.35.225 () {44 vars in 792 bytes} [Thu Jun 21 03:59:51 2018] GET /styles/prosilver/template/forum_fn.js => generated 58583 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 18/86] 101.226.35.225 () {44 vars in 802 bytes} [Thu Jun 21 03:59:51 2018] GET /styles/prosilver/template/styleswitcher.js => generated 58643 bytes in 43 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 18/87] 101.226.35.225 () {44 vars in 762 bytes} [Thu Jun 21 03:59:52 2018] GET /editor/ubb/uploader.js => generated 58403 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 18/88] 101.226.35.225 () {44 vars in 770 bytes} [Thu Jun 21 03:59:53 2018] GET /template/default/style.css => generated 58451 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 18/89] 101.226.35.225 () {44 vars in 744 bytes} [Thu Jun 21 03:59:54 2018] GET /static/js/reset.js => generated 58245 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 18/90] 101.226.35.225 () {44 vars in 756 bytes} [Thu Jun 21 03:59:55 2018] GET /images/js/common.js => generated 58367 bytes in 52 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 19/91] 101.226.35.225 () {44 vars in 764 bytes} [Thu Jun 21 03:59:56 2018] GET /templets/style/dede.css => generated 58415 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 19/92] 101.226.35.225 () {44 vars in 758 bytes} [Thu Jun 21 03:59:57 2018] GET /include/dedeajax2.js => generated 58379 bytes in 37 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 19/93] 101.226.35.225 () {44 vars in 760 bytes} [Thu Jun 21 03:59:58 2018] GET /images/default/inc.js => generated 58391 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 19/94] 101.226.35.225 () {44 vars in 760 bytes} [Thu Jun 21 03:59:59 2018] GET /js/lang/core/zh-cn.js => generated 58391 bytes in 37 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 19/95] 101.226.35.225 () {44 vars in 758 bytes} [Thu Jun 21 04:00:00 2018] GET /js/lang/cms/zh-cn.js => generated 58379 bytes in 47 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 20/96] 101.226.35.225 () {44 vars in 768 bytes} [Thu Jun 21 04:00:01 2018] GET /d/js/acmsd/ecms_dialog.js => generated 58439 bytes in 65 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 20/97] 101.226.35.225 () {44 vars in 764 bytes} [Thu Jun 21 04:00:01 2018] GET /skin/default/js/tabs.js => generated 58415 bytes in 116 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 20/98] 101.226.35.225 () {44 vars in 748 bytes} [Thu Jun 21 04:00:02 2018] GET /media/system/js/tab.js => generated 58249 bytes in 65 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 20/99] 101.226.35.225 () {44 vars in 754 bytes} [Thu Jun 21 04:00:03 2018] GET /media/system/css/mootree.css => generated 58255 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 20/100] 101.226.35.225 () {44 vars in 750 bytes} [Thu Jun 21 04:00:04 2018] GET /lang/zh/front.js => generated 58331 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 21/101] 101.226.35.225 () {44 vars in 768 bytes} [Thu Jun 21 04:00:05 2018] GET /style/default/content.css => generated 58439 bytes in 49 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 21/102] 101.226.35.225 () {44 vars in 748 bytes} [Thu Jun 21 04:00:06 2018] GET /lang/zh/edit.js => generated 58319 bytes in 58 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 21/103] 101.226.35.225 () {44 vars in 738 bytes} [Thu Jun 21 04:00:07 2018] GET /rockmongo/ => generated 58259 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 21/104] 101.226.35.225 () {44 vars in 744 bytes} [Thu Jun 21 04:00:07 2018] GET /server-status => generated 58295 bytes in 37 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 21/105] 101.226.35.225 () {44 vars in 746 bytes} [Thu Jun 21 04:00:08 2018] GET /ueditor.all.js => generated 58307 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 22/106] 101.226.35.225 () {44 vars in 770 bytes} [Thu Jun 21 04:00:09 2018] GET /wikilib.d/PmWiki.ChangeLog => generated 58451 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 22/107] 101.226.35.225 () {44 vars in 782 bytes} [Thu Jun 21 04:00:10 2018] GET /4e5e5d7364f443e28fbf0d3ae744a59a => generated 58523 bytes in 37 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 22/108] 101.226.35.225 () {44 vars in 734 bytes} [Thu Jun 21 04:00:11 2018] GET /jenkins/ => generated 58235 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 22/109] 101.226.35.225 () {44 vars in 772 bytes} [Thu Jun 21 04:00:12 2018] GET /console/login/LoginForm.jsp => generated 58463 bytes in 52 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 22/110] 101.226.35.225 () {44 vars in 728 bytes} [Thu Jun 21 04:00:13 2018] GET /solr/ => generated 58199 bytes in 49 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 23/111] 101.226.35.225 () {44 vars in 718 bytes} [Thu Jun 21 04:00:13 2018] GET / => generated 58139 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[pid: 14598|app: 0|req: 23/112] 117.136.4.65 () {40 vars in 945 bytes} [Thu Jun 21 10:05:00 2018] GET / => generated 8111 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 14601|app: 0|req: 23/113] 117.136.4.65 () {50 vars in 1150 bytes} [Thu Jun 21 10:05:12 2018] POST / => generated 330 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 14597|app: 0|req: 23/114] 120.204.17.70 () {36 vars in 550 bytes} [Thu Jun 21 10:06:00 2018] GET / => generated 8111 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 14600|app: 0|req: 23/115] 117.136.4.65 () {40 vars in 945 bytes} [Thu Jun 21 10:47:02 2018] GET / => generated 8111 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 14599|app: 0|req: 24/116] 117.136.4.65 () {40 vars in 945 bytes} [Thu Jun 21 11:05:53 2018] GET / => generated 8111 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 24/117] 211.144.157.50 () {34 vars in 517 bytes} [Thu Jun 21 19:17:23 2018] GET /manager/html => generated 57243 bytes in 59 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 24/118] 101.226.35.225 () {44 vars in 788 bytes} [Fri Jun 22 08:17:15 2018] GET /wp-includes/js/comment-reply.min.js => generated 58559 bytes in 55 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 24/119] 101.226.35.225 () {44 vars in 768 bytes} [Fri Jun 22 08:17:16 2018] GET /skins/vector/csshover.htc => generated 58439 bytes in 47 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 24/120] 101.226.35.225 () {44 vars in 746 bytes} [Fri Jun 22 08:17:17 2018] GET /misc/states.js => generated 58307 bytes in 44 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 25/121] 101.226.35.225 () {44 vars in 742 bytes} [Fri Jun 22 08:17:18 2018] GET /static/js/md5.js => generated 58243 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 25/122] 101.226.35.225 () {44 vars in 752 bytes} [Fri Jun 22 08:17:19 2018] GET /include/js/md5.js => generated 58343 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 25/123] 101.226.35.225 () {44 vars in 758 bytes} [Fri Jun 22 08:17:20 2018] GET /include/js/common.js => generated 58379 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 25/124] 101.226.35.225 () {44 vars in 754 bytes} [Fri Jun 22 08:17:21 2018] GET /include/js/ajax.js => generated 58355 bytes in 47 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 25/125] 101.226.35.225 () {44 vars in 784 bytes} [Fri Jun 22 08:17:22 2018] GET /res/js/dev/pages/common/global.js => generated 58535 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 26/126] 101.226.35.225 () {44 vars in 752 bytes} [Fri Jun 22 08:17:23 2018] GET /js/wind_editor.js => generated 58343 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 26/127] 101.226.35.225 () {44 vars in 792 bytes} [Fri Jun 22 08:17:24 2018] GET /styles/prosilver/template/forum_fn.js => generated 58583 bytes in 44 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 26/128] 101.226.35.225 () {44 vars in 802 bytes} [Fri Jun 22 08:17:24 2018] GET /styles/prosilver/template/styleswitcher.js => generated 58643 bytes in 59 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 26/129] 101.226.35.225 () {44 vars in 762 bytes} [Fri Jun 22 08:17:25 2018] GET /editor/ubb/uploader.js => generated 58403 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 26/130] 101.226.35.225 () {44 vars in 770 bytes} [Fri Jun 22 08:17:26 2018] GET /template/default/style.css => generated 58451 bytes in 58 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 27/131] 101.226.35.225 () {44 vars in 744 bytes} [Fri Jun 22 08:17:27 2018] GET /static/js/reset.js => generated 58245 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 27/132] 101.226.35.225 () {44 vars in 756 bytes} [Fri Jun 22 08:17:28 2018] GET /images/js/common.js => generated 58367 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 27/133] 101.226.35.225 () {44 vars in 764 bytes} [Fri Jun 22 08:17:29 2018] GET /templets/style/dede.css => generated 58415 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 27/134] 101.226.35.225 () {44 vars in 758 bytes} [Fri Jun 22 08:17:30 2018] GET /include/dedeajax2.js => generated 58379 bytes in 74 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 27/135] 101.226.35.225 () {44 vars in 760 bytes} [Fri Jun 22 08:17:31 2018] GET /images/default/inc.js => generated 58391 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 28/136] 101.226.35.225 () {44 vars in 760 bytes} [Fri Jun 22 08:17:32 2018] GET /js/lang/core/zh-cn.js => generated 58391 bytes in 45 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 28/137] 101.226.35.225 () {44 vars in 758 bytes} [Fri Jun 22 08:17:33 2018] GET /js/lang/cms/zh-cn.js => generated 58379 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 28/138] 101.226.35.225 () {44 vars in 768 bytes} [Fri Jun 22 08:17:33 2018] GET /d/js/acmsd/ecms_dialog.js => generated 58439 bytes in 44 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 28/139] 101.226.35.225 () {44 vars in 764 bytes} [Fri Jun 22 08:17:34 2018] GET /skin/default/js/tabs.js => generated 58415 bytes in 46 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 28/140] 101.226.35.225 () {44 vars in 748 bytes} [Fri Jun 22 08:17:35 2018] GET /media/system/js/tab.js => generated 58249 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 29/141] 101.226.35.225 () {44 vars in 754 bytes} [Fri Jun 22 08:17:36 2018] GET /media/system/css/mootree.css => generated 58255 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 29/142] 101.226.35.225 () {44 vars in 750 bytes} [Fri Jun 22 08:17:37 2018] GET /lang/zh/front.js => generated 58331 bytes in 61 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 29/143] 101.226.35.225 () {44 vars in 768 bytes} [Fri Jun 22 08:17:38 2018] GET /style/default/content.css => generated 58439 bytes in 48 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 29/144] 101.226.35.225 () {44 vars in 748 bytes} [Fri Jun 22 08:17:39 2018] GET /lang/zh/edit.js => generated 58319 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 29/145] 101.226.35.225 () {44 vars in 738 bytes} [Fri Jun 22 08:17:40 2018] GET /rockmongo/ => generated 58259 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 30/146] 101.226.35.225 () {44 vars in 744 bytes} [Fri Jun 22 08:17:41 2018] GET /server-status => generated 58295 bytes in 54 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 30/147] 101.226.35.225 () {44 vars in 746 bytes} [Fri Jun 22 08:17:42 2018] GET /ueditor.all.js => generated 58307 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 30/148] 101.226.35.225 () {44 vars in 770 bytes} [Fri Jun 22 08:17:43 2018] GET /wikilib.d/PmWiki.ChangeLog => generated 58451 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 30/149] 101.226.35.225 () {44 vars in 782 bytes} [Fri Jun 22 08:17:44 2018] GET /4e5e5d7364f443e28fbf0d3ae744a59a => generated 58523 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 30/150] 101.226.35.225 () {44 vars in 734 bytes} [Fri Jun 22 08:17:45 2018] GET /jenkins/ => generated 58235 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 31/151] 101.226.35.225 () {44 vars in 772 bytes} [Fri Jun 22 08:17:45 2018] GET /console/login/LoginForm.jsp => generated 58463 bytes in 47 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 31/152] 101.226.35.225 () {44 vars in 728 bytes} [Fri Jun 22 08:17:46 2018] GET /solr/ => generated 58199 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 31/153] 101.226.35.225 () {44 vars in 718 bytes} [Fri Jun 22 08:17:47 2018] GET / => generated 58139 bytes in 43 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[pid: 14597|app: 0|req: 31/154] 117.136.4.68 () {40 vars in 945 bytes} [Fri Jun 22 17:36:50 2018] GET / => generated 8111 bytes in 37 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 14600|app: 0|req: 31/155] 117.136.4.68 () {50 vars in 1150 bytes} [Fri Jun 22 17:37:01 2018] POST / => generated 330 bytes in 58 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 14599|app: 0|req: 32/156] 117.185.117.51 () {36 vars in 630 bytes} [Fri Jun 22 17:37:50 2018] GET / => generated 8111 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 32/157] 183.57.54.43 () {26 vars in 284 bytes} [Sun Jun 24 17:11:56 2018] GET / => generated 56474 bytes in 157 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'VM-218-113-ubuntu:8055'. You may need to add 'vm-218-113-ubuntu' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 32/158] 183.57.54.43 () {22 vars in 227 bytes} [Sun Jun 24 17:12:01 2018] GET / => generated 56118 bytes in 123 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'VM-218-113-ubuntu:8055'. You may need to add 'vm-218-113-ubuntu' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 32/159] 183.57.54.43 () {22 vars in 227 bytes} [Sun Jun 24 17:12:12 2018] GET / => generated 56118 bytes in 74 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 32/160] 211.144.157.50 () {34 vars in 517 bytes} [Mon Jun 25 01:25:35 2018] GET /manager/html => generated 57243 bytes in 45 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 33/161] 101.226.35.225 () {44 vars in 788 bytes} [Tue Jun 26 05:29:04 2018] GET /wp-includes/js/comment-reply.min.js => generated 58559 bytes in 138 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 33/162] 101.226.35.225 () {44 vars in 768 bytes} [Tue Jun 26 05:29:05 2018] GET /skins/vector/csshover.htc => generated 58439 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 33/163] 101.226.35.225 () {44 vars in 746 bytes} [Tue Jun 26 05:29:06 2018] GET /misc/states.js => generated 58307 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 33/164] 101.226.35.225 () {44 vars in 742 bytes} [Tue Jun 26 05:29:07 2018] GET /static/js/md5.js => generated 58243 bytes in 37 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 33/165] 101.226.35.225 () {44 vars in 752 bytes} [Tue Jun 26 05:29:08 2018] GET /include/js/md5.js => generated 58343 bytes in 43 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 34/166] 101.226.35.225 () {44 vars in 758 bytes} [Tue Jun 26 05:29:09 2018] GET /include/js/common.js => generated 58379 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 34/167] 101.226.35.225 () {44 vars in 754 bytes} [Tue Jun 26 05:29:10 2018] GET /include/js/ajax.js => generated 58355 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 34/168] 101.226.35.225 () {44 vars in 784 bytes} [Tue Jun 26 05:29:11 2018] GET /res/js/dev/pages/common/global.js => generated 58535 bytes in 37 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 34/169] 101.226.35.225 () {44 vars in 752 bytes} [Tue Jun 26 05:29:12 2018] GET /js/wind_editor.js => generated 58343 bytes in 51 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 34/170] 101.226.35.225 () {44 vars in 792 bytes} [Tue Jun 26 05:29:13 2018] GET /styles/prosilver/template/forum_fn.js => generated 58583 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 35/171] 101.226.35.225 () {44 vars in 802 bytes} [Tue Jun 26 05:29:14 2018] GET /styles/prosilver/template/styleswitcher.js => generated 58643 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 35/172] 101.226.35.225 () {44 vars in 762 bytes} [Tue Jun 26 05:29:15 2018] GET /editor/ubb/uploader.js => generated 58403 bytes in 49 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 35/173] 101.226.35.225 () {44 vars in 770 bytes} [Tue Jun 26 05:29:17 2018] GET /template/default/style.css => generated 58451 bytes in 47 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 35/174] 101.226.35.225 () {44 vars in 744 bytes} [Tue Jun 26 05:29:18 2018] GET /static/js/reset.js => generated 58245 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 35/175] 101.226.35.225 () {44 vars in 756 bytes} [Tue Jun 26 05:29:19 2018] GET /images/js/common.js => generated 58367 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 36/176] 101.226.35.225 () {44 vars in 764 bytes} [Tue Jun 26 05:29:20 2018] GET /templets/style/dede.css => generated 58415 bytes in 45 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 36/177] 101.226.35.225 () {44 vars in 758 bytes} [Tue Jun 26 05:29:21 2018] GET /include/dedeajax2.js => generated 58379 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 36/178] 101.226.35.225 () {44 vars in 760 bytes} [Tue Jun 26 05:29:23 2018] GET /images/default/inc.js => generated 58391 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 36/179] 101.226.35.225 () {44 vars in 760 bytes} [Tue Jun 26 05:29:24 2018] GET /js/lang/core/zh-cn.js => generated 58391 bytes in 52 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 36/180] 101.226.35.225 () {44 vars in 758 bytes} [Tue Jun 26 05:29:25 2018] GET /js/lang/cms/zh-cn.js => generated 58379 bytes in 44 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 37/181] 101.226.35.225 () {44 vars in 768 bytes} [Tue Jun 26 05:29:26 2018] GET /d/js/acmsd/ecms_dialog.js => generated 58439 bytes in 48 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 37/182] 101.226.35.225 () {44 vars in 764 bytes} [Tue Jun 26 05:29:27 2018] GET /skin/default/js/tabs.js => generated 58415 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 37/183] 101.226.35.225 () {44 vars in 748 bytes} [Tue Jun 26 05:29:28 2018] GET /media/system/js/tab.js => generated 58249 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 37/184] 101.226.35.225 () {44 vars in 754 bytes} [Tue Jun 26 05:29:30 2018] GET /media/system/css/mootree.css => generated 58255 bytes in 43 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 37/185] 101.226.35.225 () {44 vars in 750 bytes} [Tue Jun 26 05:29:31 2018] GET /lang/zh/front.js => generated 58331 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 38/186] 101.226.35.225 () {44 vars in 768 bytes} [Tue Jun 26 05:29:32 2018] GET /style/default/content.css => generated 58439 bytes in 49 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 38/187] 101.226.35.225 () {44 vars in 748 bytes} [Tue Jun 26 05:29:33 2018] GET /lang/zh/edit.js => generated 58319 bytes in 55 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 38/188] 101.226.35.225 () {44 vars in 738 bytes} [Tue Jun 26 05:29:34 2018] GET /rockmongo/ => generated 58259 bytes in 36 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 38/189] 101.226.35.225 () {44 vars in 744 bytes} [Tue Jun 26 05:29:35 2018] GET /server-status => generated 58295 bytes in 46 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 38/190] 101.226.35.225 () {44 vars in 746 bytes} [Tue Jun 26 05:29:36 2018] GET /ueditor.all.js => generated 58307 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 39/191] 101.226.35.225 () {44 vars in 770 bytes} [Tue Jun 26 05:29:37 2018] GET /wikilib.d/PmWiki.ChangeLog => generated 58451 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 39/192] 101.226.35.225 () {44 vars in 782 bytes} [Tue Jun 26 05:29:38 2018] GET /4e5e5d7364f443e28fbf0d3ae744a59a => generated 58523 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 39/193] 101.226.35.225 () {44 vars in 734 bytes} [Tue Jun 26 05:29:39 2018] GET /jenkins/ => generated 58235 bytes in 50 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 39/194] 101.226.35.225 () {44 vars in 772 bytes} [Tue Jun 26 05:29:41 2018] GET /console/login/LoginForm.jsp => generated 58463 bytes in 44 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 39/195] 101.226.35.225 () {44 vars in 728 bytes} [Tue Jun 26 05:29:42 2018] GET /solr/ => generated 58199 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 40/196] 101.226.35.225 () {44 vars in 718 bytes} [Tue Jun 26 05:29:43 2018] GET / => generated 58139 bytes in 46 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 40/197] 101.226.35.225 () {44 vars in 788 bytes} [Wed Jun 27 11:02:00 2018] GET /wp-includes/js/comment-reply.min.js => generated 58559 bytes in 44 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 40/198] 101.226.35.225 () {44 vars in 768 bytes} [Wed Jun 27 11:02:01 2018] GET /skins/vector/csshover.htc => generated 58439 bytes in 47 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 40/199] 101.226.35.225 () {44 vars in 746 bytes} [Wed Jun 27 11:02:02 2018] GET /misc/states.js => generated 58307 bytes in 49 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 40/200] 101.226.35.225 () {44 vars in 742 bytes} [Wed Jun 27 11:02:03 2018] GET /static/js/md5.js => generated 58243 bytes in 62 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 41/201] 101.226.35.225 () {44 vars in 752 bytes} [Wed Jun 27 11:02:04 2018] GET /include/js/md5.js => generated 58343 bytes in 50 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 41/202] 101.226.35.225 () {44 vars in 758 bytes} [Wed Jun 27 11:02:05 2018] GET /include/js/common.js => generated 58379 bytes in 57 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 41/203] 101.226.35.225 () {44 vars in 754 bytes} [Wed Jun 27 11:02:06 2018] GET /include/js/ajax.js => generated 58355 bytes in 51 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 41/204] 101.226.35.225 () {44 vars in 784 bytes} [Wed Jun 27 11:02:07 2018] GET /res/js/dev/pages/common/global.js => generated 58535 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 41/205] 101.226.35.225 () {44 vars in 752 bytes} [Wed Jun 27 11:02:08 2018] GET /js/wind_editor.js => generated 58343 bytes in 52 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 42/206] 101.226.35.225 () {44 vars in 792 bytes} [Wed Jun 27 11:02:09 2018] GET /styles/prosilver/template/forum_fn.js => generated 58583 bytes in 36 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 42/207] 101.226.35.225 () {44 vars in 802 bytes} [Wed Jun 27 11:02:10 2018] GET /styles/prosilver/template/styleswitcher.js => generated 58643 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 42/208] 101.226.35.225 () {44 vars in 762 bytes} [Wed Jun 27 11:02:11 2018] GET /editor/ubb/uploader.js => generated 58403 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 42/209] 101.226.35.225 () {44 vars in 770 bytes} [Wed Jun 27 11:02:12 2018] GET /template/default/style.css => generated 58451 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 42/210] 101.226.35.225 () {44 vars in 744 bytes} [Wed Jun 27 11:02:13 2018] GET /static/js/reset.js => generated 58245 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 43/211] 101.226.35.225 () {44 vars in 756 bytes} [Wed Jun 27 11:02:14 2018] GET /images/js/common.js => generated 58367 bytes in 85 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 43/212] 101.226.35.225 () {44 vars in 764 bytes} [Wed Jun 27 11:02:15 2018] GET /templets/style/dede.css => generated 58415 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 43/213] 101.226.35.225 () {44 vars in 758 bytes} [Wed Jun 27 11:02:17 2018] GET /include/dedeajax2.js => generated 58379 bytes in 86 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 43/214] 101.226.35.225 () {44 vars in 760 bytes} [Wed Jun 27 11:02:18 2018] GET /images/default/inc.js => generated 58391 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 43/215] 101.226.35.225 () {44 vars in 760 bytes} [Wed Jun 27 11:02:19 2018] GET /js/lang/core/zh-cn.js => generated 58391 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 44/216] 101.226.35.225 () {44 vars in 758 bytes} [Wed Jun 27 11:02:20 2018] GET /js/lang/cms/zh-cn.js => generated 58379 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 44/217] 101.226.35.225 () {44 vars in 768 bytes} [Wed Jun 27 11:02:22 2018] GET /d/js/acmsd/ecms_dialog.js => generated 58439 bytes in 48 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 44/218] 101.226.35.225 () {44 vars in 764 bytes} [Wed Jun 27 11:02:23 2018] GET /skin/default/js/tabs.js => generated 58415 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 44/219] 101.226.35.225 () {44 vars in 748 bytes} [Wed Jun 27 11:02:24 2018] GET /media/system/js/tab.js => generated 58249 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 44/220] 101.226.35.225 () {44 vars in 754 bytes} [Wed Jun 27 11:02:25 2018] GET /media/system/css/mootree.css => generated 58255 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 45/221] 101.226.35.225 () {44 vars in 750 bytes} [Wed Jun 27 11:02:26 2018] GET /lang/zh/front.js => generated 58331 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 45/222] 101.226.35.225 () {44 vars in 768 bytes} [Wed Jun 27 11:02:27 2018] GET /style/default/content.css => generated 58439 bytes in 43 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 45/223] 101.226.35.225 () {44 vars in 748 bytes} [Wed Jun 27 11:02:28 2018] GET /lang/zh/edit.js => generated 58319 bytes in 56 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 45/224] 101.226.35.225 () {44 vars in 738 bytes} [Wed Jun 27 11:02:29 2018] GET /rockmongo/ => generated 58259 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 45/225] 101.226.35.225 () {44 vars in 744 bytes} [Wed Jun 27 11:02:30 2018] GET /server-status => generated 58295 bytes in 78 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 46/226] 101.226.35.225 () {44 vars in 746 bytes} [Wed Jun 27 11:02:31 2018] GET /ueditor.all.js => generated 58307 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 46/227] 101.226.35.225 () {44 vars in 770 bytes} [Wed Jun 27 11:02:32 2018] GET /wikilib.d/PmWiki.ChangeLog => generated 58451 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 46/228] 101.226.35.225 () {44 vars in 782 bytes} [Wed Jun 27 11:02:33 2018] GET /4e5e5d7364f443e28fbf0d3ae744a59a => generated 58523 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 46/229] 101.226.35.225 () {44 vars in 734 bytes} [Wed Jun 27 11:02:34 2018] GET /jenkins/ => generated 58235 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 46/230] 101.226.35.225 () {44 vars in 772 bytes} [Wed Jun 27 11:02:36 2018] GET /console/login/LoginForm.jsp => generated 58463 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 47/231] 101.226.35.225 () {44 vars in 728 bytes} [Wed Jun 27 11:02:36 2018] GET /solr/ => generated 58199 bytes in 54 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 47/232] 101.226.35.225 () {44 vars in 718 bytes} [Wed Jun 27 11:02:38 2018] GET / => generated 58139 bytes in 72 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 47/233] 101.226.35.225 () {44 vars in 788 bytes} [Thu Jun 28 11:42:05 2018] GET /wp-includes/js/comment-reply.min.js => generated 58559 bytes in 63 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 47/234] 101.226.35.225 () {44 vars in 768 bytes} [Thu Jun 28 11:42:06 2018] GET /skins/vector/csshover.htc => generated 58439 bytes in 48 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 47/235] 101.226.35.225 () {44 vars in 746 bytes} [Thu Jun 28 11:42:07 2018] GET /misc/states.js => generated 58307 bytes in 50 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 48/236] 101.226.35.225 () {44 vars in 742 bytes} [Thu Jun 28 11:42:08 2018] GET /static/js/md5.js => generated 58243 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 48/237] 101.226.35.225 () {44 vars in 752 bytes} [Thu Jun 28 11:42:09 2018] GET /include/js/md5.js => generated 58343 bytes in 48 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 48/238] 101.226.35.225 () {44 vars in 758 bytes} [Thu Jun 28 11:42:10 2018] GET /include/js/common.js => generated 58379 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 48/239] 101.226.35.225 () {44 vars in 754 bytes} [Thu Jun 28 11:42:11 2018] GET /include/js/ajax.js => generated 58355 bytes in 44 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 48/240] 101.226.35.225 () {44 vars in 784 bytes} [Thu Jun 28 11:42:13 2018] GET /res/js/dev/pages/common/global.js => generated 58535 bytes in 45 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 49/241] 101.226.35.225 () {44 vars in 752 bytes} [Thu Jun 28 11:42:14 2018] GET /js/wind_editor.js => generated 58343 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 49/242] 101.226.35.225 () {44 vars in 792 bytes} [Thu Jun 28 11:42:15 2018] GET /styles/prosilver/template/forum_fn.js => generated 58583 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 49/243] 101.226.35.225 () {44 vars in 802 bytes} [Thu Jun 28 11:42:16 2018] GET /styles/prosilver/template/styleswitcher.js => generated 58643 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 49/244] 101.226.35.225 () {44 vars in 762 bytes} [Thu Jun 28 11:42:17 2018] GET /editor/ubb/uploader.js => generated 58403 bytes in 83 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 49/245] 101.226.35.225 () {44 vars in 770 bytes} [Thu Jun 28 11:42:18 2018] GET /template/default/style.css => generated 58451 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 50/246] 101.226.35.225 () {44 vars in 744 bytes} [Thu Jun 28 11:42:19 2018] GET /static/js/reset.js => generated 58245 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 50/247] 101.226.35.225 () {44 vars in 756 bytes} [Thu Jun 28 11:42:20 2018] GET /images/js/common.js => generated 58367 bytes in 53 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 50/248] 101.226.35.225 () {44 vars in 764 bytes} [Thu Jun 28 11:42:21 2018] GET /templets/style/dede.css => generated 58415 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 50/249] 101.226.35.225 () {44 vars in 758 bytes} [Thu Jun 28 11:42:22 2018] GET /include/dedeajax2.js => generated 58379 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 50/250] 101.226.35.225 () {44 vars in 760 bytes} [Thu Jun 28 11:42:23 2018] GET /images/default/inc.js => generated 58391 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 51/251] 101.226.35.225 () {44 vars in 760 bytes} [Thu Jun 28 11:42:25 2018] GET /js/lang/core/zh-cn.js => generated 58391 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 51/252] 101.226.35.225 () {44 vars in 758 bytes} [Thu Jun 28 11:42:26 2018] GET /js/lang/cms/zh-cn.js => generated 58379 bytes in 44 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 51/253] 101.226.35.225 () {44 vars in 768 bytes} [Thu Jun 28 11:42:28 2018] GET /d/js/acmsd/ecms_dialog.js => generated 58439 bytes in 44 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 51/254] 101.226.35.225 () {44 vars in 764 bytes} [Thu Jun 28 11:42:29 2018] GET /skin/default/js/tabs.js => generated 58415 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 51/255] 101.226.35.225 () {44 vars in 748 bytes} [Thu Jun 28 11:42:31 2018] GET /media/system/js/tab.js => generated 58249 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 52/256] 101.226.35.225 () {44 vars in 754 bytes} [Thu Jun 28 11:42:32 2018] GET /media/system/css/mootree.css => generated 58255 bytes in 58 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 52/257] 101.226.35.225 () {44 vars in 750 bytes} [Thu Jun 28 11:42:33 2018] GET /lang/zh/front.js => generated 58331 bytes in 50 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 52/258] 101.226.35.225 () {44 vars in 768 bytes} [Thu Jun 28 11:42:34 2018] GET /style/default/content.css => generated 58439 bytes in 44 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 52/259] 101.226.35.225 () {44 vars in 748 bytes} [Thu Jun 28 11:42:36 2018] GET /lang/zh/edit.js => generated 58319 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 52/260] 101.226.35.225 () {44 vars in 738 bytes} [Thu Jun 28 11:42:37 2018] GET /rockmongo/ => generated 58259 bytes in 37 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 53/261] 101.226.35.225 () {44 vars in 744 bytes} [Thu Jun 28 11:42:39 2018] GET /server-status => generated 58295 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 53/262] 101.226.35.225 () {44 vars in 746 bytes} [Thu Jun 28 11:42:41 2018] GET /ueditor.all.js => generated 58307 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 53/263] 101.226.35.225 () {44 vars in 770 bytes} [Thu Jun 28 11:42:42 2018] GET /wikilib.d/PmWiki.ChangeLog => generated 58451 bytes in 46 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 53/264] 101.226.35.225 () {44 vars in 782 bytes} [Thu Jun 28 11:42:43 2018] GET /4e5e5d7364f443e28fbf0d3ae744a59a => generated 58523 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 53/265] 101.226.35.225 () {44 vars in 734 bytes} [Thu Jun 28 11:42:44 2018] GET /jenkins/ => generated 58235 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 54/266] 101.226.35.225 () {44 vars in 772 bytes} [Thu Jun 28 11:42:45 2018] GET /console/login/LoginForm.jsp => generated 58463 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 54/267] 101.226.35.225 () {44 vars in 728 bytes} [Thu Jun 28 11:42:47 2018] GET /solr/ => generated 58199 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 54/268] 101.226.35.225 () {44 vars in 718 bytes} [Thu Jun 28 11:42:48 2018] GET / => generated 58139 bytes in 47 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 54/269] 125.64.94.201 () {26 vars in 285 bytes} [Sat Jun 30 12:54:33 2018] GET / => generated 56475 bytes in 44 msecs (HTTP/1.0 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 14600|app: 0|req: 54/270] 183.57.54.43 () {26 vars in 284 bytes} [Sat Jun 30 14:21:26 2018] GET / => generated 56474 bytes in 71 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'VM-218-113-ubuntu:8055'. You may need to add 'vm-218-113-ubuntu' to ALLOWED_HOSTS.
+[pid: 14599|app: 0|req: 55/271] 183.57.54.43 () {22 vars in 227 bytes} [Sat Jun 30 14:21:31 2018] GET / => generated 56118 bytes in 88 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'VM-218-113-ubuntu:8055'. You may need to add 'vm-218-113-ubuntu' to ALLOWED_HOSTS.
+[pid: 14598|app: 0|req: 55/272] 183.57.54.43 () {22 vars in 227 bytes} [Sat Jun 30 14:21:42 2018] GET / => generated 56118 bytes in 72 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+[pid: 14601|app: 0|req: 55/273] 111.53.177.42 () {38 vars in 701 bytes} [Tue Jul  3 22:25:10 2018] GET / => generated 8111 bytes in 24 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 14597|app: -1|req: -1/274] 111.53.177.42 () {38 vars in 690 bytes} [Tue Jul  3 22:25:10 2018] GET /static/js/spin.min.js => generated 4108 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 14600|app: -1|req: -1/275] 111.53.177.42 () {38 vars in 692 bytes} [Tue Jul  3 22:25:10 2018] GET /static/js/ladda.min.js => generated 2408 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+[pid: 14599|app: 0|req: 56/276] 111.53.177.42 () {36 vars in 628 bytes} [Tue Jul  3 22:25:11 2018] GET /favicon.ico => generated 2919 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 14598|app: 0|req: 56/277] 111.53.177.42 () {36 vars in 688 bytes} [Tue Jul  3 22:25:11 2018] GET /favicon.ico => generated 2919 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'VM-218-113-ubuntu:8055'. You may need to add 'vm-218-113-ubuntu' to ALLOWED_HOSTS.
+[pid: 14601|app: 0|req: 56/278] 183.57.54.43 () {22 vars in 226 bytes} [Wed Jul  4 07:50:51 2018] GET / => generated 56116 bytes in 98 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'VM-218-113-ubuntu:8055'. You may need to add 'vm-218-113-ubuntu' to ALLOWED_HOSTS.
+[pid: 14597|app: 0|req: 55/279] 183.57.54.43 () {22 vars in 226 bytes} [Wed Jul  4 07:51:02 2018] GET / => generated 56116 bytes in 74 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 14602)
+...brutally killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /var/www/jzxy_quality
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (/var/www/jzxy_quality/script/uwsgi.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.git
+[uwsgi-static] added mapping for /static => /var/www/jzxy_quality/static
+*** Starting uWSGI 2.0.15 (64bit) on [Fri Jul  6 12:48:22 2018] ***
+compiled with version: 5.4.0 20160609 on 22 December 2017 10:25:14
+os: Linux-4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016
+nodename: VM-218-113-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/jzxy_quality
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/jzxy_quality
+your processes number limit is 3308
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on :8055 fd 3
+uwsgi socket 0 inherited UNIX address /var/www/jzxy_quality/script/uwsgi.sock fd 6
+Python version: 3.5.2 (default, Sep 14 2017, 22:51:06)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1ebde60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 485712 bytes (474 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x1ebde60 pid: 8864 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 8864)
+spawned uWSGI worker 1 (pid: 11567, cores: 1)
+spawned uWSGI worker 2 (pid: 11568, cores: 1)
+spawned uWSGI worker 3 (pid: 11569, cores: 1)
+spawned uWSGI worker 4 (pid: 11570, cores: 1)
+spawned uWSGI worker 5 (pid: 11571, cores: 1)
+spawned uWSGI http 1 (pid: 11572)
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Jul 11 20:03:43 2018] ***
+compiled with version: 5.4.0 20160609 on 22 December 2017 10:25:14
+os: Linux-4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016
+nodename: VM-218-113-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/jzxy_quality
+writing pidfile to /var/www/jzxy_quality/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /var/www/jzxy_quality
+your processes number limit is 3308
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on :8055 fd 3
+uwsgi socket 0 bound to UNIX address /var/www/jzxy_quality/script/uwsgi.sock fd 6
+Python version: 3.5.2 (default, Sep 14 2017, 22:51:06)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xcfd830
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 485712 bytes (474 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xcfd830 pid: 4669 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4669)
+spawned uWSGI worker 1 (pid: 4673, cores: 1)
+spawned uWSGI worker 2 (pid: 4674, cores: 1)
+spawned uWSGI worker 3 (pid: 4675, cores: 1)
+spawned uWSGI worker 4 (pid: 4676, cores: 1)
+spawned uWSGI worker 5 (pid: 4677, cores: 1)
+spawned uWSGI http 1 (pid: 4678)
+[pid: 4675|app: 0|req: 1/1] 171.116.156.45 () {42 vars in 759 bytes} [Wed Jul 11 20:04:57 2018] GET / => generated 8111 bytes in 233 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4674|app: 0|req: 1/2] 171.116.156.45 () {40 vars in 746 bytes} [Wed Jul 11 20:04:58 2018] GET /favicon.ico => generated 2919 bytes in 197 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4673|app: 0|req: 1/3] 171.116.156.45 () {40 vars in 686 bytes} [Wed Jul 11 20:04:58 2018] GET /favicon.ico => generated 2919 bytes in 189 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 4676|app: 0|req: 1/4] 171.116.156.45 () {42 vars in 773 bytes} [Wed Jul 11 20:05:13 2018] GET /addinfo => generated 0 bytes in 107 msecs (HTTP/1.1 301) 3 headers in 114 bytes (2 switches on core 0)
+[pid: 4677|app: 0|req: 1/5] 171.116.156.45 () {42 vars in 775 bytes} [Wed Jul 11 20:05:14 2018] GET /addinfo/ => generated 13795 bytes in 210 msecs (HTTP/1.1 200) 5 headers in 279 bytes (1 switches on core 0)
+[pid: 4675|app: 0|req: 2/6] 117.136.4.109 () {38 vars in 818 bytes} [Wed Jul 11 20:07:37 2018] GET / => generated 8111 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 4674|app: 0|req: 2/7] 117.136.91.254 () {38 vars in 814 bytes} [Wed Jul 11 20:07:39 2018] GET / => generated 8111 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 4673|app: 0|req: 2/8] 117.136.4.109 () {40 vars in 923 bytes} [Wed Jul 11 20:07:40 2018] GET /addinfo/ => generated 13795 bytes in 36 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+[pid: 4676|app: 0|req: 2/9] 117.136.4.109 () {40 vars in 929 bytes} [Wed Jul 11 20:07:44 2018] GET /se_account/ => generated 4452 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 4677|app: 0|req: 2/10] 117.136.4.109 () {40 vars in 917 bytes} [Wed Jul 11 20:07:48 2018] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 112 bytes (2 switches on core 0)
+[pid: 4675|app: 0|req: 3/11] 117.136.4.109 () {40 vars in 919 bytes} [Wed Jul 11 20:07:48 2018] GET /admin/ => generated 0 bytes in 35 msecs (HTTP/1.1 302) 7 headers in 265 bytes (2 switches on core 0)
+[pid: 4673|app: 0|req: 3/12] 183.57.53.177 () {38 vars in 680 bytes} [Wed Jul 11 20:07:48 2018] GET /admin/login/?next=/admin => generated 1650 bytes in 104 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 4674|app: 0|req: 3/13] 117.136.4.109 () {40 vars in 956 bytes} [Wed Jul 11 20:07:48 2018] GET /admin/login/?next=/admin/ => generated 1652 bytes in 142 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 4676|app: 0|req: 3/14] 117.136.4.109 () {42 vars in 917 bytes} [Wed Jul 11 20:07:49 2018] GET /static/admin/css/login.css => generated 2910 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /404.html
+[pid: 4677|app: 0|req: 3/15] 117.136.4.109 () {42 vars in 916 bytes} [Wed Jul 11 20:07:49 2018] GET /static/admin/css/base.css => generated 2910 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 4675|app: 0|req: 4/16] 117.136.91.254 () {50 vars in 1108 bytes} [Wed Jul 11 20:07:53 2018] POST / => generated 330 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 4673|app: 0|req: 4/17] 171.116.156.45 () {42 vars in 771 bytes} [Wed Jul 11 20:08:10 2018] GET /xadmin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 113 bytes (2 switches on core 0)
+[pid: 4674|app: 0|req: 4/18] 171.116.156.45 () {42 vars in 773 bytes} [Wed Jul 11 20:08:11 2018] GET /xadmin/ => generated 4163 bytes in 123 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 0)
+[pid: 4676|app: 0|req: 4/19] 171.116.156.45 () {42 vars in 741 bytes} [Wed Jul 11 20:08:11 2018] GET /xadmin/jsi18n/ => generated 4170 bytes in 146 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 0)
+[pid: 4677|app: 0|req: 4/20] 171.116.156.45 () {48 vars in 939 bytes} [Wed Jul 11 20:08:19 2018] POST /xadmin/ => generated 0 bytes in 107 msecs (HTTP/1.1 302) 9 headers in 532 bytes (2 switches on core 0)
+[pid: 4675|app: 0|req: 5/21] 171.116.156.45 () {44 vars in 866 bytes} [Wed Jul 11 20:08:19 2018] GET /xadmin/ => generated 12581 bytes in 176 msecs (HTTP/1.1 200) 6 headers in 228 bytes (1 switches on core 0)
+[pid: 4673|app: 0|req: 5/22] 171.116.156.45 () {42 vars in 785 bytes} [Wed Jul 11 20:08:19 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 4674|app: 0|req: 5/23] 171.116.156.45 () {44 vars in 918 bytes} [Wed Jul 11 20:08:24 2018] GET /xadmin/school_student/department/ => generated 42493 bytes in 124 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 4676|app: 0|req: 5/24] 171.116.156.45 () {42 vars in 811 bytes} [Wed Jul 11 20:08:26 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 115 bytes (2 switches on core 0)
+[pid: 4677|app: 0|req: 5/25] 171.116.156.45 () {44 vars in 946 bytes} [Wed Jul 11 20:08:28 2018] GET /xadmin/school_student/publishment/ => generated 34328 bytes in 219 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 4675|app: 0|req: 6/26] 171.116.156.45 () {42 vars in 812 bytes} [Wed Jul 11 20:08:28 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 115 bytes (2 switches on core 0)
+[pid: 4673|app: 0|req: 6/27] 171.116.156.45 () {44 vars in 937 bytes} [Wed Jul 11 20:08:29 2018] GET /xadmin/school_student/praise/ => generated 34174 bytes in 200 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 4674|app: 0|req: 6/28] 171.116.156.45 () {42 vars in 807 bytes} [Wed Jul 11 20:08:29 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 4676|app: 0|req: 6/29] 171.116.156.45 () {44 vars in 942 bytes} [Wed Jul 11 20:08:31 2018] GET /xadmin/school_student/publishment/ => generated 34328 bytes in 104 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 4677|app: 0|req: 6/30] 171.116.156.45 () {42 vars in 812 bytes} [Wed Jul 11 20:08:31 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 4673|app: 0|req: 7/31] 120.204.17.72 () {36 vars in 574 bytes} [Wed Jul 11 20:08:32 2018] GET /admin => generated 0 bytes in 3 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 4675|app: 0|req: 7/32] 121.51.32.144 () {36 vars in 550 bytes} [Wed Jul 11 20:08:32 2018] GET / => generated 8111 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 4674|app: 0|req: 7/33] 120.204.17.72 () {36 vars in 603 bytes} [Wed Jul 11 20:08:32 2018] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 4676|app: 0|req: 7/34] 171.116.156.45 () {44 vars in 935 bytes} [Wed Jul 11 20:08:33 2018] GET /xadmin/school_student/grade/ => generated 75259 bytes in 205 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 4677|app: 0|req: 7/35] 171.116.156.45 () {42 vars in 806 bytes} [Wed Jul 11 20:08:34 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 115 bytes (2 switches on core 0)
+[pid: 4673|app: 0|req: 8/36] 117.185.117.54 () {36 vars in 571 bytes} [Wed Jul 11 20:08:44 2018] GET /se_account => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 117 bytes (2 switches on core 0)
+[pid: 4675|app: 0|req: 8/37] 120.204.17.71 () {36 vars in 597 bytes} [Wed Jul 11 20:08:49 2018] GET /admin/login/?next=/admin => generated 1650 bytes in 43 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 0)
+[pid: 4674|app: 0|req: 8/38] 171.116.156.45 () {44 vars in 992 bytes} [Wed Jul 11 20:08:49 2018] GET /xadmin/school_student/grade/?_q_=%E8%AE%A1%E7%AE%97%E6%9C%BA => generated 35449 bytes in 93 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 4676|app: 0|req: 8/39] 171.116.156.45 () {42 vars in 838 bytes} [Wed Jul 11 20:08:49 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 4677|app: 0|req: 8/40] 171.116.156.45 () {44 vars in 965 bytes} [Wed Jul 11 20:08:52 2018] GET /xadmin/school_student/student/ => generated 192822 bytes in 337 msecs (HTTP/1.1 200) 8 headers in 514 bytes (2 switches on core 0)
+[pid: 4673|app: 0|req: 9/41] 171.116.156.45 () {42 vars in 808 bytes} [Wed Jul 11 20:08:53 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 4675|app: 0|req: 9/42] 171.116.156.45 () {44 vars in 998 bytes} [Wed Jul 11 20:09:03 2018] GET /xadmin/school_student/student/?_q_=%E4%BE%AF%E4%BA%9A%E6%9D%B0 => generated 87814 bytes in 140 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 4674|app: 0|req: 9/43] 171.116.156.45 () {42 vars in 840 bytes} [Wed Jul 11 20:09:03 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 115 bytes (2 switches on core 0)
+[pid: 4676|app: 0|req: 9/44] 171.116.156.45 () {44 vars in 996 bytes} [Wed Jul 11 20:09:10 2018] GET /xadmin/school_student/student/?_q_=1511112112 => generated 80034 bytes in 159 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 4677|app: 0|req: 9/45] 171.116.156.45 () {42 vars in 823 bytes} [Wed Jul 11 20:09:10 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 4673|app: 0|req: 10/46] 171.116.156.45 () {44 vars in 948 bytes} [Wed Jul 11 20:09:18 2018] GET /xadmin/school_student/praise/ => generated 34174 bytes in 82 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 4675|app: 0|req: 10/47] 171.116.156.45 () {42 vars in 807 bytes} [Wed Jul 11 20:09:19 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 4674|app: 0|req: 10/48] 171.116.156.45 () {44 vars in 942 bytes} [Wed Jul 11 20:09:22 2018] GET /xadmin/school_student/publishment/ => generated 34328 bytes in 87 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 4676|app: 0|req: 10/49] 171.116.156.45 () {42 vars in 812 bytes} [Wed Jul 11 20:09:22 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 4677|app: 0|req: 10/50] 171.116.156.45 () {44 vars in 915 bytes} [Wed Jul 11 20:09:24 2018] GET /xadmin/xadmin/log/ => generated 36704 bytes in 135 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 4673|app: 0|req: 11/51] 171.116.156.45 () {42 vars in 796 bytes} [Wed Jul 11 20:09:25 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 115 bytes (2 switches on core 0)
+[pid: 4675|app: 0|req: 11/52] 171.116.156.45 () {44 vars in 921 bytes} [Wed Jul 11 20:09:29 2018] GET /xadmin/school_student/praise/ => generated 34174 bytes in 85 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 4674|app: 0|req: 11/53] 171.116.156.45 () {42 vars in 807 bytes} [Wed Jul 11 20:09:29 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 4676|app: 0|req: 11/54] 171.116.156.45 () {44 vars in 946 bytes} [Wed Jul 11 20:09:36 2018] GET /xadmin/school_student/student/6247/detail/?_format=html => generated 2398 bytes in 45 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 0)
+[pid: 4677|app: 0|req: 11/55] 171.116.156.45 () {44 vars in 950 bytes} [Wed Jul 11 20:14:09 2018] GET /xadmin/school_student/praise/2/update/ => generated 710601 bytes in 3239 msecs (HTTP/1.1 200) 7 headers in 383 bytes (4 switches on core 0)
+[pid: 4673|app: 0|req: 12/56] 171.116.156.45 () {42 vars in 816 bytes} [Wed Jul 11 20:14:13 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 115 bytes (2 switches on core 0)
+[pid: 4675|app: 0|req: 12/57] 171.116.156.45 () {46 vars in 981 bytes} [Wed Jul 11 20:18:04 2018] GET /xadmin/school_student/praise/2/update/ => generated 710601 bytes in 3211 msecs (HTTP/1.1 200) 7 headers in 383 bytes (4 switches on core 0)
+[pid: 4674|app: 0|req: 12/58] 171.116.156.45 () {44 vars in 847 bytes} [Wed Jul 11 20:18:08 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 115 bytes (2 switches on core 0)
+[pid: 4676|app: 0|req: 12/59] 171.116.156.45 () {44 vars in 897 bytes} [Wed Jul 11 20:18:59 2018] GET /xadmin/ => generated 12581 bytes in 34 msecs (HTTP/1.1 200) 6 headers in 228 bytes (2 switches on core 0)
+[pid: 4677|app: 0|req: 12/60] 171.116.156.45 () {42 vars in 785 bytes} [Wed Jul 11 20:18:59 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 4673|app: 0|req: 13/61] 171.116.156.45 () {44 vars in 910 bytes} [Wed Jul 11 20:19:02 2018] GET /xadmin/school_student/praise/ => generated 34174 bytes in 88 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 4675|app: 0|req: 13/62] 171.116.156.45 () {42 vars in 807 bytes} [Wed Jul 11 20:19:03 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 4674|app: 0|req: 13/63] 171.116.156.45 () {44 vars in 950 bytes} [Wed Jul 11 20:19:04 2018] GET /xadmin/school_student/praise/2/update/ => generated 710601 bytes in 4374 msecs (HTTP/1.1 200) 7 headers in 383 bytes (4 switches on core 0)
+[pid: 4676|app: 0|req: 13/64] 171.116.156.45 () {42 vars in 816 bytes} [Wed Jul 11 20:19:09 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 115 bytes (2 switches on core 0)
+[pid: 4677|app: 0|req: 13/65] 171.116.156.45 () {44 vars in 910 bytes} [Wed Jul 11 20:19:26 2018] GET /xadmin/school_student/praise/ => generated 34174 bytes in 135 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 4673|app: 0|req: 14/66] 171.116.156.45 () {44 vars in 950 bytes} [Wed Jul 11 20:19:30 2018] GET /xadmin/school_student/praise/1/update/ => generated 710607 bytes in 3159 msecs (HTTP/1.1 200) 7 headers in 383 bytes (4 switches on core 0)
+[pid: 4675|app: 0|req: 14/67] 171.116.156.45 () {42 vars in 816 bytes} [Wed Jul 11 20:19:35 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 115 bytes (2 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 4678)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /var/www/jzxy_quality/script/uwsgi.sock removed.
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Jul 11 20:21:24 2018] ***
+compiled with version: 5.4.0 20160609 on 22 December 2017 10:25:14
+os: Linux-4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016
+nodename: VM-218-113-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/jzxy_quality
+writing pidfile to /var/www/jzxy_quality/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /var/www/jzxy_quality
+your processes number limit is 3308
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on :8055 fd 3
+uwsgi socket 0 bound to UNIX address /var/www/jzxy_quality/script/uwsgi.sock fd 6
+Python version: 3.5.2 (default, Sep 14 2017, 22:51:06)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x108c830
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 485712 bytes (474 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x108c830 pid: 6131 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6131)
+spawned uWSGI worker 1 (pid: 6133, cores: 1)
+spawned uWSGI worker 2 (pid: 6134, cores: 1)
+spawned uWSGI worker 3 (pid: 6135, cores: 1)
+spawned uWSGI worker 4 (pid: 6136, cores: 1)
+spawned uWSGI worker 5 (pid: 6137, cores: 1)
+spawned uWSGI http 1 (pid: 6138)
+[pid: 6134|app: 0|req: 1/1] 171.116.156.45 () {42 vars in 817 bytes} [Wed Jul 11 20:21:38 2018] GET /xadmin/ => generated 12582 bytes in 338 msecs (HTTP/1.1 200) 6 headers in 228 bytes (2 switches on core 0)
+[pid: 6136|app: 0|req: 1/2] 171.116.156.45 () {42 vars in 785 bytes} [Wed Jul 11 20:21:39 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 129 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 6137|app: 0|req: 1/3] 171.116.156.45 () {44 vars in 910 bytes} [Wed Jul 11 20:21:42 2018] GET /xadmin/school_student/praise/ => generated 34175 bytes in 443 msecs (HTTP/1.1 200) 8 headers in 513 bytes (2 switches on core 0)
+[pid: 6135|app: 0|req: 1/4] 171.116.156.45 () {42 vars in 807 bytes} [Wed Jul 11 20:21:43 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 147 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 6133|app: 0|req: 1/5] 171.116.156.45 () {44 vars in 950 bytes} [Wed Jul 11 20:21:44 2018] GET /xadmin/school_student/praise/2/update/ => generated 710602 bytes in 3668 msecs (HTTP/1.1 200) 7 headers in 383 bytes (3 switches on core 0)
+[pid: 6134|app: 0|req: 2/6] 171.116.156.45 () {42 vars in 816 bytes} [Wed Jul 11 20:21:48 2018] GET /xadmin/jsi18n/ => generated 4753 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 115 bytes (2 switches on core 0)
+[pid: 6136|app: 0|req: 2/7] 117.136.91.254 () {40 vars in 903 bytes} [Thu Jul 12 10:22:23 2018] GET / => generated 8111 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 6137|app: 0|req: 2/8] 117.136.91.254 () {50 vars in 1108 bytes} [Thu Jul 12 10:22:32 2018] POST / => generated 330 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 6135|app: 0|req: 2/9] 117.136.91.254 () {40 vars in 919 bytes} [Thu Jul 12 10:23:07 2018] GET /addinfo/ => generated 13795 bytes in 35 msecs (HTTP/1.1 200) 5 headers in 279 bytes (2 switches on core 0)
+[pid: 6133|app: 0|req: 2/10] 117.136.91.254 () {50 vars in 1128 bytes} [Thu Jul 12 10:23:15 2018] POST /venify/ => generated 261 bytes in 11 msecs (HTTP/1.1 200) 5 headers in 246 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6134|app: 0|req: 3/11] 183.57.54.43 () {26 vars in 284 bytes} [Thu Jul 12 13:31:37 2018] GET / => generated 56414 bytes in 77 msecs (HTTP/1.0 400) 1 headers in 53 bytes (2 switches on core 0)
+[pid: 6136|app: 0|req: 3/12] 117.136.91.254 () {40 vars in 947 bytes} [Fri Jul 13 20:59:22 2018] GET / => generated 8111 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6137|app: 0|req: 3/13] 117.136.91.254 () {50 vars in 1152 bytes} [Fri Jul 13 20:59:49 2018] POST / => generated 330 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 6135|app: 0|req: 3/14] 117.185.117.53 () {36 vars in 551 bytes} [Fri Jul 13 21:00:21 2018] GET / => generated 8111 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 6133|app: 0|req: 3/15] 117.136.4.77 () {40 vars in 905 bytes} [Fri Jul 13 21:00:28 2018] GET / => generated 8111 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 6134|app: 0|req: 4/16] 117.136.4.77 () {50 vars in 1110 bytes} [Fri Jul 13 21:00:44 2018] POST / => generated 701 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 6136|app: 0|req: 4/17] 117.136.4.77 () {40 vars in 917 bytes} [Fri Jul 13 21:11:41 2018] GET /admin/ => generated 0 bytes in 45 msecs (HTTP/1.1 302) 7 headers in 265 bytes (2 switches on core 0)
+[pid: 6137|app: 0|req: 4/18] 117.136.4.77 () {40 vars in 954 bytes} [Fri Jul 13 21:11:41 2018] GET /admin/login/?next=/admin/ => generated 1652 bytes in 82 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 6135|app: 0|req: 4/19] 117.136.4.77 () {42 vars in 914 bytes} [Fri Jul 13 21:11:42 2018] GET /static/admin/css/base.css => generated 2910 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 6133|app: 0|req: 4/20] 117.136.4.77 () {42 vars in 915 bytes} [Fri Jul 13 21:11:42 2018] GET /static/admin/css/login.css => generated 2910 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 6134|app: 0|req: 5/21] 117.136.4.77 () {50 vars in 1209 bytes} [Fri Jul 13 21:11:56 2018] POST /admin/login/?next=/admin/ => generated 0 bytes in 61 msecs (HTTP/1.1 302) 9 headers in 531 bytes (2 switches on core 0)
+[pid: 6136|app: 0|req: 5/22] 117.136.4.77 () {44 vars in 1059 bytes} [Fri Jul 13 21:11:56 2018] GET /admin/ => generated 2739 bytes in 45 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 6135|app: 0|req: 5/23] 117.136.4.77 () {42 vars in 944 bytes} [Fri Jul 13 21:11:56 2018] GET /static/admin/css/dashboard.css => generated 2910 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 6137|app: 0|req: 5/24] 117.136.4.77 () {42 vars in 939 bytes} [Fri Jul 13 21:11:56 2018] GET /static/admin/css/base.css => generated 2910 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 6133|app: 0|req: 5/25] 117.136.4.77 () {40 vars in 961 bytes} [Fri Jul 13 21:12:09 2018] GET /admin/ => generated 2739 bytes in 57 msecs (HTTP/1.1 200) 6 headers in 227 bytes (2 switches on core 0)
+Not Found: /404.html
+[pid: 6136|app: 0|req: 6/26] 117.136.4.77 () {42 vars in 944 bytes} [Fri Jul 13 21:12:09 2018] GET /static/admin/css/dashboard.css => generated 2910 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 6134|app: 0|req: 6/27] 117.136.4.77 () {42 vars in 939 bytes} [Fri Jul 13 21:12:09 2018] GET /static/admin/css/base.css => generated 2910 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 6137|app: 0|req: 6/28] 117.185.117.56 () {36 vars in 575 bytes} [Fri Jul 13 21:12:41 2018] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 6135|app: 0|req: 6/29] 117.185.117.56 () {36 vars in 597 bytes} [Fri Jul 13 21:12:41 2018] GET /admin/login/?next=/admin => generated 1650 bytes in 52 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 0)
+[pid: 6133|app: 0|req: 6/30] 120.204.17.72 () {36 vars in 560 bytes} [Fri Jul 13 21:13:09 2018] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 112 bytes (2 switches on core 0)
+[pid: 6136|app: 0|req: 7/31] 117.136.91.254 () {40 vars in 947 bytes} [Fri Jul 13 21:16:29 2018] GET / => generated 8111 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+[pid: 6134|app: 0|req: 7/32] 117.136.91.254 () {50 vars in 1152 bytes} [Fri Jul 13 21:16:37 2018] POST / => generated 330 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 6137|app: 0|req: 7/33] 120.204.17.70 () {36 vars in 550 bytes} [Fri Jul 13 21:17:28 2018] GET / => generated 8111 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6135|app: 0|req: 7/34] 101.226.35.225 () {44 vars in 788 bytes} [Sat Jul 14 11:13:58 2018] GET /wp-includes/js/comment-reply.min.js => generated 58499 bytes in 101 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6133|app: 0|req: 7/35] 101.226.35.225 () {44 vars in 768 bytes} [Sat Jul 14 11:13:59 2018] GET /skins/vector/csshover.htc => generated 58379 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6136|app: 0|req: 8/36] 101.226.35.225 () {44 vars in 746 bytes} [Sat Jul 14 11:14:00 2018] GET /misc/states.js => generated 58247 bytes in 87 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6134|app: 0|req: 8/37] 101.226.35.225 () {44 vars in 742 bytes} [Sat Jul 14 11:14:01 2018] GET /static/js/md5.js => generated 58183 bytes in 51 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6137|app: 0|req: 8/38] 101.226.35.225 () {44 vars in 752 bytes} [Sat Jul 14 11:14:02 2018] GET /include/js/md5.js => generated 58283 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6135|app: 0|req: 8/39] 101.226.35.225 () {44 vars in 758 bytes} [Sat Jul 14 11:14:03 2018] GET /include/js/common.js => generated 58319 bytes in 43 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6133|app: 0|req: 8/40] 101.226.35.225 () {44 vars in 754 bytes} [Sat Jul 14 11:14:04 2018] GET /include/js/ajax.js => generated 58295 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6136|app: 0|req: 9/41] 101.226.35.225 () {44 vars in 784 bytes} [Sat Jul 14 11:14:05 2018] GET /res/js/dev/pages/common/global.js => generated 58475 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6134|app: 0|req: 9/42] 101.226.35.225 () {44 vars in 752 bytes} [Sat Jul 14 11:14:06 2018] GET /js/wind_editor.js => generated 58283 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6137|app: 0|req: 9/43] 101.226.35.225 () {44 vars in 792 bytes} [Sat Jul 14 11:14:07 2018] GET /styles/prosilver/template/forum_fn.js => generated 58523 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6135|app: 0|req: 9/44] 101.226.35.225 () {44 vars in 802 bytes} [Sat Jul 14 11:14:08 2018] GET /styles/prosilver/template/styleswitcher.js => generated 58583 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6133|app: 0|req: 9/45] 101.226.35.225 () {44 vars in 762 bytes} [Sat Jul 14 11:14:09 2018] GET /editor/ubb/uploader.js => generated 58343 bytes in 47 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6136|app: 0|req: 10/46] 101.226.35.225 () {44 vars in 770 bytes} [Sat Jul 14 11:14:10 2018] GET /template/default/style.css => generated 58391 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6134|app: 0|req: 10/47] 101.226.35.225 () {44 vars in 744 bytes} [Sat Jul 14 11:14:11 2018] GET /static/js/reset.js => generated 58185 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6137|app: 0|req: 10/48] 101.226.35.225 () {44 vars in 756 bytes} [Sat Jul 14 11:14:13 2018] GET /images/js/common.js => generated 58307 bytes in 43 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6135|app: 0|req: 10/49] 101.226.35.225 () {44 vars in 764 bytes} [Sat Jul 14 11:14:14 2018] GET /templets/style/dede.css => generated 58355 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6133|app: 0|req: 10/50] 101.226.35.225 () {44 vars in 758 bytes} [Sat Jul 14 11:14:16 2018] GET /include/dedeajax2.js => generated 58319 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6136|app: 0|req: 11/51] 101.226.35.225 () {44 vars in 760 bytes} [Sat Jul 14 11:14:17 2018] GET /images/default/inc.js => generated 58331 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6134|app: 0|req: 11/52] 101.226.35.225 () {44 vars in 760 bytes} [Sat Jul 14 11:14:18 2018] GET /js/lang/core/zh-cn.js => generated 58331 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6137|app: 0|req: 11/53] 101.226.35.225 () {44 vars in 758 bytes} [Sat Jul 14 11:14:19 2018] GET /js/lang/cms/zh-cn.js => generated 58319 bytes in 44 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6135|app: 0|req: 11/54] 101.226.35.225 () {44 vars in 768 bytes} [Sat Jul 14 11:14:21 2018] GET /d/js/acmsd/ecms_dialog.js => generated 58379 bytes in 37 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6133|app: 0|req: 11/55] 101.226.35.225 () {44 vars in 764 bytes} [Sat Jul 14 11:14:22 2018] GET /skin/default/js/tabs.js => generated 58355 bytes in 43 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6136|app: 0|req: 12/56] 101.226.35.225 () {44 vars in 748 bytes} [Sat Jul 14 11:14:23 2018] GET /media/system/js/tab.js => generated 58189 bytes in 57 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6134|app: 0|req: 12/57] 101.226.35.225 () {44 vars in 754 bytes} [Sat Jul 14 11:14:24 2018] GET /media/system/css/mootree.css => generated 58195 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6137|app: 0|req: 12/58] 101.226.35.225 () {44 vars in 750 bytes} [Sat Jul 14 11:14:26 2018] GET /lang/zh/front.js => generated 58271 bytes in 47 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6135|app: 0|req: 12/59] 101.226.35.225 () {44 vars in 768 bytes} [Sat Jul 14 11:14:27 2018] GET /style/default/content.css => generated 58379 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6133|app: 0|req: 12/60] 101.226.35.225 () {44 vars in 748 bytes} [Sat Jul 14 11:14:28 2018] GET /lang/zh/edit.js => generated 58259 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6136|app: 0|req: 13/61] 101.226.35.225 () {44 vars in 738 bytes} [Sat Jul 14 11:14:29 2018] GET /rockmongo/ => generated 58199 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6134|app: 0|req: 13/62] 101.226.35.225 () {44 vars in 744 bytes} [Sat Jul 14 11:14:31 2018] GET /server-status => generated 58235 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6137|app: 0|req: 13/63] 101.226.35.225 () {44 vars in 746 bytes} [Sat Jul 14 11:14:32 2018] GET /ueditor.all.js => generated 58247 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6135|app: 0|req: 13/64] 101.226.35.225 () {44 vars in 770 bytes} [Sat Jul 14 11:14:33 2018] GET /wikilib.d/PmWiki.ChangeLog => generated 58391 bytes in 37 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6133|app: 0|req: 13/65] 101.226.35.225 () {44 vars in 782 bytes} [Sat Jul 14 11:14:35 2018] GET /4e5e5d7364f443e28fbf0d3ae744a59a => generated 58463 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6136|app: 0|req: 14/66] 101.226.35.225 () {44 vars in 734 bytes} [Sat Jul 14 11:14:36 2018] GET /jenkins/ => generated 58175 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6134|app: 0|req: 14/67] 101.226.35.225 () {44 vars in 772 bytes} [Sat Jul 14 11:14:37 2018] GET /console/login/LoginForm.jsp => generated 58403 bytes in 39 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6137|app: 0|req: 14/68] 101.226.35.225 () {44 vars in 728 bytes} [Sat Jul 14 11:14:38 2018] GET /solr/ => generated 58139 bytes in 48 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6135|app: 0|req: 14/69] 101.226.35.225 () {44 vars in 718 bytes} [Sat Jul 14 11:14:39 2018] GET / => generated 58079 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: '123.207.254.239:8005'. You may need to add '123.207.254.239' to ALLOWED_HOSTS.
+[pid: 6133|app: 0|req: 14/70] 183.57.54.43 () {26 vars in 284 bytes} [Sat Jul 14 20:08:27 2018] GET / => generated 56414 bytes in 45 msecs (HTTP/1.0 400) 1 headers in 53 bytes (2 switches on core 0)
+Invalid HTTP_HOST header: 'VM-218-113-ubuntu:8055'. You may need to add 'vm-218-113-ubuntu' to ALLOWED_HOSTS.
+[pid: 6136|app: 0|req: 15/71] 183.57.54.43 () {22 vars in 227 bytes} [Sat Jul 14 20:08:32 2018] GET / => generated 56058 bytes in 49 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'VM-218-113-ubuntu:8055'. You may need to add 'vm-218-113-ubuntu' to ALLOWED_HOSTS.
+[pid: 6134|app: 0|req: 15/72] 183.57.54.43 () {22 vars in 227 bytes} [Sat Jul 14 20:08:37 2018] GET / => generated 56058 bytes in 52 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)

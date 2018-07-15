@@ -25,7 +25,7 @@ SECRET_KEY = '-*gyia!_7p6!_tovp=^tt06*wm@32mc*nyi=4*)7z6=(t96qkm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.unihyj.cn', 'localhost']
+ALLOWED_HOSTS = ['www.unihyj.cn', 'localhost', '127.0.0.1']
 
 
 # Application definition

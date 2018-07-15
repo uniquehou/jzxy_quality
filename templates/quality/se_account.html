@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>饭卡寻主</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<style type="text/css">
+		body {
+			background-color: #93dcce;
+		}
+
+		.input {
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42;
+            color: #555;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        }
+        #search_id {
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 0px;
+            height: 40px;
+        }
+        #to_search {
+            margin-left: 10px;
+            height: 40px;
+        }
+
+		label {
+			line-height: 34px;;
+		}
+		.form-group {
+			margin-bottom: 5px;
+		}
+		.col-xs-8 {
+			padding-left: 0px;
+		}
+        #main {
+            margin-top: 30px;
+        }
+
+        h5 {
+        	margin: 3px 0 0 0;
+        	font-size: 15px;
+        }
+        label {
+        	line-height: 20px;
+        }
+        label.col-xs-3 {
+        	padding: 0;
+        }
+	</style>
+</head>
+<body>
+	<header>
+		<h4 class="title text-center">饭卡寻主</h4>
+	</header>
+
+    <!-- 输入一卡能帐号查询 -->
+	<div class="row search">
+        {% csrf_token %}
+        <input type="text" class="input col-xs-offset-2 col-xs-6 col-xs" id="account" placeholder="输入一卡通帐号查询"/>
+        <button type="button" class="btn btn-primary col-xs-2" id="to_search">搜索</button>
+    </div>
+    <h6 class="text-center" id="error"></h6>
+
+	<!-- 信息表单 -->
+	<div id="main">
+		<form class="form-horizontal">
+		    <div class="form-group row">
+		        <label for="name" class="control-label col-xs-3 text-right col-xs-offset-1">姓名</label>
+		        <div class="col-xs-7">
+		            <h5 id="name">{{ student.student_name }}</h5>
+		        </div>
+		    </div>
+		    <div class="form-group row">
+		        <label for="student_department" class="control-label col-xs-3 text-right col-xs-offset-1">院系</label>
+		        <div class="col-xs-7">
+		            <h5 id="department">{{ student.student_department.name }}</h5>
+		        </div>
+		    </div>
+		    <div class="form-group row">
+		        <label for="student_grade" class="control-label col-xs-3 text-right col-xs-offset-1">班级</label>
+		        <div class="col-xs-7">
+		            <h5 id="grade">{{ student.student_grade.name }}</h5>
+		        </div>
+		    </div>
+		</form>
+	</div>
+
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="{% static 'js/spin.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/ladda.min.js' %}"></script>
+
+	<script type="text/javascript">
+		$("#main").hide();
+
+        $("#to_search").click(function () {
+            $.ajax({
+                url: "#",
+                type: "post",
+                data: {
+                    "account": $("#account").val(),
+                    "csrfmiddlewaretoken": $("input[name='csrfmiddlewaretoken']").val()
+                },
+                dataType: "json",
+                success: function (res) {
+                    if (res.status == 1) {
+						$("#name").text(res.student_name);
+						$("#department").text(res.student_department);
+						$("#grade").text(res.student_grade);
+
+                        $("#main").show();
+                        $("#error").hide();
+                    } else if (res.status == 2) {
+                        $("#error").text("未检索到此帐号");
+                        $("#main").hide();
+                        $("#error").show();
+                    } else {
+                        $("#error").text("查询失败，请稍后重试");
+                        $("#main").hide();
+                        $("#error").show();
+                    }
+                }
+            })
+        });
+	</script>
+</body>
+</html>

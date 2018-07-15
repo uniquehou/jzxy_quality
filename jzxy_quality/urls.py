@@ -20,5 +20,5 @@ import xadmin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^xadmin/', xadmin.site.urls),
-    url(r'^quality/', include('quality.urls')),
+    url(r'', include('quality.urls')),
 ]

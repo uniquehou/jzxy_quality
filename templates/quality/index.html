@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人中心</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		body {
+			background: #f0f1f2;
+		}
+		.first {
+			background: #d44aff;
+			height: 150px;
+			display: flex;
+			padding: 25px 30px;
+		}
+		.image img {
+			width: 100px;
+		}
+		.info {
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+
+		.list-group {
+			margin-top: 10px;
+		}
+		.badge {
+			border-radius: 50%;
+		}
+		.list-group a {
+			color: inherit;
+		}
+	</style>
+</head>
+<body>
+	<div class="first container">
+		<div class="image">
+			<img class="img-circle img-thumbnail" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1034317729,337624616&fm=27&gp=0.jpg">
+		</div>
+		<div class="info">
+			<h5>学号：1511112112</h5>
+			<h5>姓名：侯亚杰</h5>
+		</div>
+	</div>
+
+	<ul class="list-group">
+	    <a href="#"><li class="list-group-item">
+	    	<span class="badge"> > </span>
+	    	基本信息
+	    </li></a>
+	    <a href="#"><li class="list-group-item">
+	    	<span class="badge"> > </span>
+	    	密码修改
+	    </li></a>
+	    <a href="#"><li class="list-group-item">
+	    	<span class="badge"> > </span>
+	    	素质记录
+	    </li></a>
+	</ul>
+
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$("#login").click(function() {
+			window.location.href = "index.html";
+		})
+	</script>
+</body>
+</html>

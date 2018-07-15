@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>晋中学院大学生素质记录 - 登录</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		body {
+			background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531576833127&di=dfb94ee91ca0635f3acd4eeb524b2340&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201601%2F20%2F20160120220344_RZaTK.jpeg');
+		}
+		h3:first-child {
+			margin-top: 150px;
+		}
+
+	</style>
+</head>
+<body>
+	<h3 class="text-center">晋中学院大学生素质记录</h3>
+	<h2 class="text-center">登录</h2>
+
+	<form class="form-horizontal">
+	    <div class="form-group">
+	        <label for="student_id" class="control-label col-xs-2 text-right col-xs-offset-1">学号</label>
+	        <div class="col-xs-8">
+                <input type="text" name="student_id" class="form-control" placeholder="学号">
+	        </div>
+	    </div>
+	    <div class="form-group">
+	        <label for="name" class="control-label col-xs-2 text-right col-xs-offset-1">密码</label>
+	        <div class="col-xs-8">
+	            <input type="text" name="password" class="form-control" placeholder="密码">
+	        </div>
+	    </div>
+	</form>
+
+	<button type='button' class="btn btn-primary col-xs-10 col-xs-offset-1" id="login">登录</button>
+
+
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$("#login").click(function() {
+			window.href = "index.html";
+		})
+	</script>
+</body>
+</html>

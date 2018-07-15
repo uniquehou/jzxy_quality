@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>个人中心</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<style type="text/css">
+		body {
+			background-color: #93dcce;
+		}
+		label {
+			line-height: 34px;;
+		}
+		.form-group {
+			margin-bottom: 5px;
+		}
+		.col-xs-8 {
+			padding-left: 0px;
+		}
+        #main {
+            margin-top: 30px;
+        }
+	</style>
+</head>
+<body>
+	<header>
+		<h4 class="title text-center">晋中学院大学生素质记录</h4>
+		<h4 class="title text-right" style="margin-right: 30px">-------信息补全</h4>
+	</header>
+
+	<div id="verify" class="container">
+		<h3 class="text-center">请点击验证学号</h3>
+	    <button id="btn_info" class="btn btn-primary btn-lg btn-block">验证</button>
+	</div>
+
+	<!-- 验证学号 -->
+	<div class="modal fade" id="info_verify" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">请输入你的学号</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label for="txt_departmentname">学号</label>
+                        <input id="student_verify_id" type="text" name="txt_departmentname" class="form-control" id="txt_departmentname" placeholder="学号">
+                        <h6 id="noexist" class="text-center red">此学号不存在，请重新输入</h6>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btn_submit" class="btn btn-primary btn-lg btn-block ladda-button" data-dismiss="modal" data-style="zoom-out" data-size="l"><span class='ladda-label'>提交</span> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 确认信息 -->
+    <div class="modal fade" id="info_show" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">请确认信息</h4>
+            </div>
+            <div class="modal-body">
+                <h4>姓名：<span id="student_name"></span></h4>
+                <h4>学号：<span id="student_id"></span></h4>
+                <h4>院系：<span id="student_department"></span></h4>
+                <h4>班级：<span id="student_grade"></span></h4>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" id="btn_OK" class="btn btn-danger btn-block btn-lg" data-dismiss="modal">确认</button>
+                <button type="button" id="btn_back" class="btn btn-primary btn-block btn-lg" data-dismiss="modal" style="margin-top: 10px">错误，重新验证学号</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 提交结果 -->
+    <div class="modal fade bs-example-modal-sm" id="result_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document" id="result_modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">提示</h4>
+            </div>
+            <div class="modal-body">
+                <h4><span id="result_text"></span></h4>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" id="result_button" class="btn btn-danger btn-block btn-lg" data-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+	<!-- 补全信息表单 -->
+	<div id="main">
+		<form class="form-horizontal" id="addform">
+		{% csrf_token %}
+		    <div class="form-group row">
+		        <label for="name" class="control-label col-xs-3 text-right">姓名</label>
+		        <div class="col-xs-8">
+		            <input type="text" class="form-control" placeholder="姓名" name="name" id="name" />
+		        </div>
+		    </div>
+		    <div class="form-group row">
+		        <label for="sex" class="control-label col-xs-3 text-right">性别</label>
+		        <div class="col-xs-8">
+		            <select class="form-control" name="sex">
+                        <option value="0">保密</option>
+		                <option value="1">男</option>
+		                <option value="2">女</option>
+		            </select>
+		        </div>
+		    </div>
+		    <div class="form-group row">
+		        <label for="nation" class="control-label col-xs-3 text-right">民族</label>
+		        <div class="col-xs-8">
+		            <select class="form-control" name="nation">
+		                <option value="1">汉族</option>
+		                <option value="2">壮族</option>
+		                <option value="3">满族</option>
+		                <option value="4">回族</option>
+		                <option value="5">苗族</option>
+		                <option value="6">维吾尔族</option>
+		                <option value="7">土家族</option>
+		                <option value="8">彝族</option>
+		                <option value="9">蒙古族</option>
+		                <option value="10">藏族</option>
+		                <option value="11">布依族</option>
+		                <option value="12">侗族</option>
+		                <option value="13">瑶族</option>
+		                <option value="14">朝鲜族</option>
+		                <option value="15">白族</option>
+		                <option value="16">哈尼族</option>
+		                <option value="17">哈萨克族</option>
+		                <option value="18">黎族</option>
+		                <option value="19">傣族</option>
+		                <option value="20">畲族</option>
+		                <option value="21">傈僳族</option>
+		                <option value="22">仡佬族</option>
+		                <option value="23">东乡族</option>
+		                <option value="24">高山族</option>
+		                <option value="25">拉祜族</option>
+		                <option value="26">水族</option>
+		                <option value="27">佤族</option>
+		                <option value="28">纳西族</option>
+		                <option value="29">羌族</option>
+		                <option value="30">土族</option>
+		                <option value="31">仫佬族</option>
+		                <option value="32">锡伯族</option>
+		                <option value="33">柯尔克孜族</option>
+		                <option value="34">达斡尔族</option>
+		                <option value="35">景颇族</option>
+		                <option value="36">毛南族</option>
+		                <option value="37">撒拉族</option>
+		                <option value="38">布朗族</option>
+		                <option value="39">塔吉克族</option>
+		                <option value="40">阿昌族</option>
+		                <option value="41">普米族</option>
+		                <option value="42">鄂温克族</option>
+		                <option value="43">怒族</option>
+		                <option value="44">京族</option>
+		                <option value="45">基诺族</option>
+		                <option value="46">德昂族</option>
+		                <option value="47">保安族</option>
+		                <option value="48">俄罗斯族</option>
+		                <option value="49">裕固族</option>
+		                <option value="50">乌孜别克族</option>
+		                <option value="51">门巴族</option>
+		                <option value="52">鄂伦春族</option>
+		                <option value="53">独龙族</option>
+		                <option value="54">塔塔尔族</option>
+		                <option value="55">赫哲族</option>
+		                <option value="56">珞巴族</option>
+		            </select>
+		        </div>
+		    </div>
+{#		    <div class="form-group row">#}
+{#		        <label for="student_id" class="control-label col-xs-3 text-right">学号</label>#}
+{#		        <div class="col-xs-8">#}
+{#		            <input type="text" class="form-control" placeholder="学号"  name="student_id" />#}
+{#		        </div>#}
+{#		    </div>#}
+{#		    <div class="form-group row">#}
+{#		        <label for="student_department" class="control-label col-xs-3 text-right">院系</label>#}
+{#		        <div class="col-xs-8">#}
+{#		            <select class="form-control" placeholder="院系"  name="student_department" >#}
+{#		                {% for each in department %}#}
+{#		                <option value="{{ each.id }}">{{ each.name }}</option>#}
+{#		                {% endfor %}#}
+{#		            </select>#}
+{#		        </div>#}
+{#		    </div>#}
+{#		    <div class="form-group row">#}
+{#		        <label for="student_major" class="control-label col-xs-3 text-right">专业</label>#}
+{#		        <div class="col-xs-8">#}
+{#		            <select class="form-control" placeholder="专业"  name="student_major" >#}
+{#		                {% for each in major %}#}
+{#		                <option value="{{ each.id }}">{{ each.name }}</option>#}
+{#		                {% endfor %}#}
+{#		            </select>#}
+{#		        </div>#}
+{#		    </div>#}
+{#		    <div class="form-group row">#}
+{#		        <label for="student_grade" class="control-label col-xs-3 text-right">班级</label>#}
+{#		        <div class="col-xs-8">#}
+{#		            <select class="form-control" placeholder="班级"  name="student_grade" >#}
+{#		                {% for each in grade %}#}
+{#		                <option value="{{ each.id }}">{{ each.name }}</option>#}
+{#		                {% endfor %}#}
+{#		            </select>#}
+{#		        </div>#}
+{#		    </div>#}
+		    <div class="form-group row">
+		        <label for="political_satus" class="control-label col-xs-3 text-right">政治面貌</label>
+		        <div class="col-xs-8">
+		            <select name="political_satus" class="form-control">
+		                <option value="1">群众</option>
+		                <option value="2">共青团员</option>
+		                <option value="3">预备党员</option>
+		                <option value="4">共产党员</option>
+		                <option value="5">其它</option>
+		            </select>
+		        </div>
+		    </div>
+		    <div class="form-group row">
+		        <label for="duty" class="control-label col-xs-3 text-right">担任职务</label>
+		        <div class="col-xs-8">
+		            <input type="text" class="form-control" placeholder="班、院系、社团、组织内所承担担任" id="duty" name="duty" value="" />
+		        </div>
+		    </div>
+            <div class="form-group row">
+		        <label for="duty" class="control-label col-xs-3 text-right">一卡通卡号</label>
+		        <div class="col-xs-8">
+		            <input type="text" class="form-control" placeholder="方便以后的饭卡找寻" id="account" name="account" />
+		        </div>
+		    </div>
+		</form>
+        <button type="button" class="btn btn-primary col-xs-4 col-xs-offset-4" id="add">提交</button>
+	</div>
+
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="{% static 'js/spin.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/ladda.min.js' %}"></script>
+
+	<script type="text/javascript">
+		$("#main").hide();
+		$("#info_verify").modal();
+        $("#noexist").hide();
+
+		$("#btn_info").click(function() {
+			$("#info_verify").modal();
+		});
+
+		$("#student_verify_id").focus(function() {
+			$("#noexist").hide();
+		})
+
+		$("#btn_submit").click(function(event) {
+			rgExp = /1[0|3|4|5|6|7][0-9]{8}/;
+			if ( !rgExp.test( $("#student_verify_id").val() ) ) {
+				$("#noexist").show();
+				return false;
+			} else {
+    			l = Ladda.create(this);
+    			l.start();
+    			$.ajax({
+    				type: "post",
+    				async: false,
+    				url: "{% url 'quality:venify' %}",
+    				data: {
+    					student_id: $("#student_verify_id").val(),
+    				},
+    				dataType: "json",
+    				success: function(data) {
+    					if (data.exist == 1) {
+			    			$("#user_id").val(data.student_id);
+			    			$("#student_name").text(data.student_name);
+                            $("#name").val(data.student_name);
+							$("#student_name_text").text(data.student_name);
+			    			$("#student_id").text(data.student_id);
+			    			$("#student_department").text(data.student_department);
+			    			$("#student_grade").text(data.student_grade);
+			    			$("#info_verify").modal('hide');
+			    			$("#info_show").modal();
+
+                            $("select[name='sex']").val(data.sex);
+                            $("select[name='nation']").val(data.nation);
+                            $("select[name='political_satus']").val(data.political_satus);
+                            $("#duty").val(data.duty);
+                            $("#account").val(data.account);
+                            l.stop();
+    					} else {
+    						$("#noexist").show();
+                            l.stop();
+    					}
+    				},
+    				error: function() {
+    					alert("验证失败，请检查网络连接稍后重试");
+    				}
+    			})
+    		}
+		});
+
+        $("#btn_OK").click(function () {
+            $("#main").show();
+            $("#verify").hide();
+        });
+
+        $("#btn_back").click(function () {
+            $("#info_verify").modal();
+        });
+
+        var change=0;
+		// 信息补全
+		$("#add").click(function() {
+			$.ajax({
+				url: "#",
+                type: "post",
+                data: $("form#addform").serialize(),
+                dataType: 'json',
+                success: function(res) {
+                    if (res.status==1) {
+                        $("#result_text").text('修改成功');
+                        $("#result_button").text("确定");
+                        change = 1;
+                        $("#result_modal").modal("show")
+                    } else {
+                        $("#result_text").text('修改失败');
+                        $("#result_button").text("重新填写");
+                        $("#result_modal").modal("show")
+                    }
+                },
+                error: function(res) {
+                    alert('网络请求失败，请检查网络后重试');
+                }
+			});
+		});
+
+        $("#result_button").click(function () {
+            if (change==1) {
+                // 修改成功，跳往查询页
+                location.href = "{% url 'quality:search' %}";
+            } else {
+                $("#result_modal").modal("hide")
+            }
+        })
+	</script>
+</body>
+</html>

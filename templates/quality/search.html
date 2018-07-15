@@ -1,250 +1,223 @@
-
 <!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<html>
 <head>
 	<meta charset="UTF-8">
+	<title>素质记录查询</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>晋中学院大学生素质查询</title>
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="../../static/css/bootstrap-select.min.css">
+
 	<style type="text/css">
-        body {
-            background: #f0f1f2;
-        }
+		body {
+			background-color: #93dcce;
+		}
 
-        /* menu */
-        .menu {
-            margin-top: 1px;
+		.input {
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42;
+            color: #555;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        }
+        #search_id {
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 0px;
             height: 40px;
-            margin-bottom: 20px;
         }
-        .menu div {
-            padding: 0px;
-            line-height: 40px;
-            border: 1px solid #e3e3e3;
+        #to_search {
+            margin-left: 10px;
+            height: 40px;
         }
 
-        /* student */
-
-
-        /* grade */
-        #grade {
-            display: none;
+		label {
+			line-height: 34px;;
+		}
+		.form-group {
+			margin-bottom: 5px;
+		}
+		.col-xs-8 {
+			padding-left: 0px;
+		}
+        #main {
+            margin-top: 30px;
         }
 
-        /* result */
-        .result_info {
-            display: none;
+        h5 {
+        	margin: 3px 0 0 0;
+        	font-size: 15px;
+        }
+        label {
+        	line-height: 20px;
+        }
+        label.col-xs-3 {
+        	padding: 0;
         }
 	</style>
 </head>
 <body>
+	<header>
+		<h4 class="title text-center">晋中学院大学生素质记录</h4>
+	</header>
 
-    <div class="menu container-fluid">
-        <div class="row">
-        <div class="col-xs-6 col-sm-6 text-center btn-primary btn" id="to_student">按学号查询</div>
-        <div class="col-xs-6 col-sm-6 text-center btn-default btn" id="to_grade">按班级查询</div>
-            </div>
+    <!-- 输入学号查询 -->
+	<div class="row search">
+        <!-- {% csrf_token %} -->
+        <input type="text" class="input col-xs-offset-2 col-xs-6 col-xs" id="search_id" placeholder="输入学号查询"/>
+        <button type="button" class="btn btn-primary col-xs-2" id="to_search">搜索</button>
     </div>
+    <h6 class="text-center" id="error"></h6>
 
-    {% csrf_token %}
-    <!-- student -->
-    <div class="container" id="student">
-        <div class="form-group row">
-            <div class="col-xs-offset-1 col-xs-7">
-                <input type="text" class="form-control" placeholder="学号" id="student_id">
+	<!-- 信息表单 -->
+	<div id="main" class="container">
+		<form class="form-horizontal" id="addform">
+		    <div class="form-group row">
+		        <label for="student_id" class="control-label col-xs-3 text-right col-xs-offset-1">学号</label>
+		        <div class="col-xs-7">
+                    <h5 id="student_id">{{ student.student_id }}</h5>
+		        </div>
+		    </div>
+		    <div class="form-group row">
+		        <label for="name" class="control-label col-xs-3 text-right col-xs-offset-1">姓名</label>
+		        <div class="col-xs-7">
+		            <h5 id="name">{{ student.student_name }}</h5>
+		        </div>
+		    </div>
+		    <div class="form-group row">
+		        <label for="sex" class="control-label col-xs-3 text-right col-xs-offset-1">性别</label>
+		        <div class="col-xs-7">
+		            <h5 id="sex">{{ student.sex }}</h5>
+		        </div>
+		    </div>
+            <div class="form-group row">
+		        <label class="control-label col-xs-3 text-right col-xs-offset-1">民族</label>
+		        <div class="col-xs-7">
+		            <h5 id="nation">{{ student.nation }}</h5>
+		        </div>
+		    </div>
+            <div class="form-group row">
+		        <label for="student_grade" class="control-label col-xs-3 text-right col-xs-offset-1">政治面貌</label>
+		        <div class="col-xs-7">
+		            <h5 id="political">{{ student.political_satus }}</h5>
+		        </div>
+		    </div>
+		    <div class="form-group row">
+		        <label for="student_department" class="control-label col-xs-3 text-right col-xs-offset-1">院系</label>
+		        <div class="col-xs-7">
+		            <h5 id="department">{{ student.student_department.name }}</h5>
+		        </div>
+		    </div>
+		    <div class="form-group row">
+		        <label for="student_grade" class="control-label col-xs-3 text-right col-xs-offset-1">班级</label>
+		        <div class="col-xs-7">
+		            <h5 id="grade">{{ student.student_grade.name }}</h5>
+		        </div>
+		    </div>
+
+		    <div class="form-group row">
+		        <label for="duty" class="control-label col-xs-3 text-right col-xs-offset-1">担任职务</label>
+		        <div class="col-xs-7">
+		            <h5 id="duty">{{ student.duty }}</h5>
+		        </div>
+		    </div>
+		</form>
+
+        <!-- 奖惩信息 -->
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">2017-2018 第二学期</h3>
             </div>
-            <button id="search_student" class="btn btn-primary btn-mini col-xs-3"　 data-loading-text="search...">查询</button>
+            <div class="panel-body" id="praise">
+            </div>
         </div>
-        <p class="text-center" id="result"></p>
+
+        <hr />
+            <div class="form-group row">
+		        <label for="duty" class="control-label col-xs-3 text-right col-xs-offset-1">一卡通卡号</label>
+		        <div class="col-xs-7">
+		            <h5 id="account">{{ student.account }}</h5>
+		        </div>
+		    </div>
     </div>
 
-    <!-- grade -->
-    <div class="container" id="grade">
-        <div class="form-group row">
-            <p class='text-center'>输入行政班级名可筛选，如 数学1401</p>
-            <div class="col-xs-offset-1 col-xs-7">
-                <select class="selectpicker show-tick form-control" data-live-search="true" id="grade">
-                    <option>选择班级</option>
-                    {% for grade in grades %}
-                        <option value="{{grade.name}}">{{grade.name}}</option>
-                    {% endfor %}
-                </select>
-            </div>
-            <button id="search_grade" class="btn btn-primary btn-mini col-xs-3" data-loading-text="search...">查询</button>
-        </div>
-    </div>
 
-    <!-- result -->
-    <div class="container result_info">
-        <h3 class="text-center">早课迟到</h3>
-        <table class="table table-bordered table-striped table-condensed" id="matin_list">
-			<thead>
-				<th>姓名</th>
-				<th>时间</th>
-				<th>备注</th>
-			</thead>
-		</table>
 
-        <h3 class="text-center">早操迟到</h3>
-        <table class="table table-bordered table-striped table-condensed" id="exer_list">
-			<thead>
-				<th>姓名</th>
-				<th>时间</th>
-				<th>备注</th>
-			</thead>
-		</table>
-    </div>
 
-	<script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
-
-	<script src="../../static/js/bootstrap-select.min.js"></script>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="{% static 'js/spin.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/ladda.min.js' %}"></script>
 
 	<script type="text/javascript">
-        var grade_div = $("#grade");
-        var student_div = $("#student");
-        var result_div = $("div.result_info");
+		// $("#main").hide();
 
-		$("#to_student").click(function () {
-		    $("#to_grade").removeClass('btn-primary');
-            $("#to_grade").addClass('btn-default');
-            $("#to_student").removeClass('btn-default');
-            $("#to_student").addClass('btn-primary');
-		    $("#result").text("");
-		    result_div.hide();
-            grade_div.hide();
-            student_div.show();
-        });
-        $("#to_grade").click(function () {
-            $("#to_student").removeClass('btn-primary');
-            $("#to_student").addClass('btn-default');
-            $("#to_grade").removeClass('btn-default');
-            $("#to_grade").addClass('btn-primary');
-            $("#result").text("");
-            result_div.hide();
-            grade_div.show();
-            student_div.hide();
-        });
-
-        $("#search_student").click(function (e) {
-            if ($("#student_id").val() == "")
-                return false;
-            else {
-                // again search operation
-                result_div.hide();
-                $(this).button("loading");
-                $("#result").text("");
-                $(".add_data").remove();
-            }
-            $.ajax("{% url 'quality:search' %}", {
-                type: 'post',
-                data: {
-                    student_id: $("#student_id").val(),
-                    csrfmiddlewaretoken: $("input[type='hidden']").val(),
-                },
-                dataType: 'json',
-                success: function (res) {
-                    if (res.status==0) {
-                        $("#result").text("无此学号")
-                    } else {
-                        result_div.show();
-                        // add matin data
-                        if (res.matin_list.length == 0)
-                            $("#matin_list").after("<p class='text-center add_data'>无迟到记录</p>");
-                        else {
-                            for (i=0; i<res.matin_list.length; i++) {
-                                tr = "<tr class='add_data'>"+
-                                    "<td>" + res.matin_list[i].name + "</td>"+
-                                    "<td>" + res.matin_list[i].date + "</td>"+
-                                    "<td>" + res.matin_list[i].note + "</td>"+
-                                "</tr>";
-                                $("#matin_list").append(tr)
-                            }
-                        }
-                        // add exer data
-                        if (res.exer_list.length == 0)
-                            $("#exer_list").after("<p class='text-center add_data'>无迟到记录</p>");
-                        else {
-                            for (i=0; i<res.exer_list.length; i++) {
-                                tr = "<tr class='add_data'>"+
-                                    "<td>" + res.exer_list[i].name + "</td>"+
-                                    "<td>" + res.exer_list[i].date + "</td>"+
-                                    "<td>" + res.exer_list[i].note + "</td>"+
-                                "</tr>";
-                                $("#exer_list").append(tr)
-                            }
-                        }
-                    }
-                },
-                error: function (res) {
-                    $("#result").text("网络连接失败，请稍后重试");
-                },
-                complete: function () {
-                    $("#search_student").button('reset');
-                }
-            })
-        });
-
-
-        $("#search_grade").click(function (e) {
-            if ($("select#grade").val() == "")
-                return false;
-            else {
-                // again search operation
-                result_div.hide();
-                $(this).button("loading");
-                $("#result").text("");
-                $(".add_data").remove();
-            }
-            $.ajax("{% url 'quality:search' %}", {
-                type: 'post',
-                data: {
-                    grade: $("select#grade").val(),
-                    csrfmiddlewaretoken: $("input[type='hidden']").val(),
-                },
-                dataType: 'json',
-                success: function (res) {
-                    if (res.status==0) {
-                        $("#result").text("无此班级")
-                    } else {
-                        result_div.show();
-                        // add matin data
-                        if (res.matin_list.length == 0)
-                            $("#matin_list").after("<p class='text-center add_data'>无迟到记录</p>");
-                        else {
-                            for (i=0; i<res.matin_list.length; i++) {
-                                tr = "<tr class='add_data'>"+
-                                    "<td>" + res.matin_list[i].name + "</td>"+
-                                    "<td>" + res.matin_list[i].date + "</td>"+
-                                    "<td>" + res.matin_list[i].note + "</td>"+
-                                "</tr>";
-                                $("#matin_list").append(tr)
-                            }
-                        }
-                        // add exer data
-                        if (res.exer_list.length == 0)
-                            $("#exer_list").after("<p class='text-center add_data'>无迟到记录</p>");
-                        else {
-                            for (i=0; i<res.exer_list.length; i++) {
-                                tr = "<tr class='add_data'>"+
-                                    "<td>" + res.exer_list[i].name + "</td>"+
-                                    "<td>" + res.exer_list[i].date + "</td>"+
-                                    "<td>" + res.exer_list[i].note + "</td>"+
-                                "</tr>";
-                                $("#exer_list").append(tr)
-                            }
-                        }
-                    }
-                },
-                error: function (res) {
-                    $("#result").text("网络连接失败，请稍后重试");
-                },
-                complete: function () {
-                    $("#search_grade").button('reset');
-                }
-            })
+        $("div.panel-heading").click(function(e) {
+            $(this).next().toggle();
         })
+
+        $("#to_search").click(function () {
+            $.ajax({
+                url: "#",
+                type: "post",
+                data: {
+                    "student_id": $("#search_id").val(),
+                    "csrfmiddlewaretoken": $("input[name='csrfmiddlewaretoken']").val()
+                },
+                dataType: "json",
+                success: function (res) {
+                    if (res.status == 1) {
+                        // 基本信息
+                    	$("#student_id").text(res.student_id);
+						$("#name").text(res.student_name);
+						$("#sex").text(res.sex);
+						$("#nation").text(res.nation);
+						$("#political").text(res.political_satus);
+						$("#department").text(res.student_department);
+						$("#grade").text(res.student_grade);
+						$("#duty").text(res.duty);
+						$("#account").text(res.account);
+                        console.log(res.praise[0].type)
+                        console.log(res.publish[1].text)
+                        // 奖励信息
+                        for(i=0; i<res.praise.length; i++) {
+                            $("#praise").append(
+                                '<div class="form-group row">' +
+                                    '<label class="control-label col-xs-3 text-right col-xs-offset-1">' + res.praise[i].type + '</label>' +
+                                    '<div class="col-xs-7">' +
+                                        '<h5>' + res.praise[i].text + '</h5>' +
+                                    '</div>' +
+                                '</div>'
+                            )
+                        }
+                        // 惩罚信息
+                        for(i=0; i<res.publish.length; i++) {
+                            $("#publish").append(
+                                '<div class="form-group row">' +
+                                    '<label class="control-label col-xs-3 text-right col-xs-offset-1">' + res.publish[i].type + '</label>' +
+                                    '<div class="col-xs-7">' +
+                                        '<h5>' + res.publish[i].text + '</h5>' +
+                                    '</div>' +
+                                '</div>'
+                            )
+                        }
+
+                        $("#main").show();
+                        $("#error").hide();
+                    } else if (res.status == 2) {
+                        $("#error").text("此学号不存在");
+                        $("#main").hide();
+                        $("#error").show();
+                    } else {
+                        $("#error").text("查询失败，请稍后重试");
+                        $("#main").hide();
+                        $("#error").show();
+                    }
+                }
+            })
+        });
 	</script>
 </body>
 </html>

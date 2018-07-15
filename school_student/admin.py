@@ -20,14 +20,29 @@ class GradeAdmin(object):
     search_fields = ('name', )
 
 
-
 class StudentAdmin(object):
     list_display = ('student_id', 'student_name', 'student_department', 'student_major', 'student_grade')
     list_filter = ['student_department', 'student_grade']
     # readonly_fields = []
-    search_fields = ('student_name', )
+    search_fields = ('student_name', 'student_id')
     # raw_id_fields = ()
     # list_per_page = 20
+
+
+class PraiseAdmin(object):
+    list_display = ('student', 'praise_type', 'text', 'description', 'image', 'praise_time')
+    list_filter = ('praise_time', 'praise_type')
+    search_field = ('student', 'text')
+
+
+class PublishAdmin(object):
+    list_display = ('student', 'publish_type', 'text', 'description', 'image', 'publish_time')
+    list_filter = ('publish_time', 'publish_type')
+    search_field = ('student', 'text')
+
+
+xadmin.site.register(Praise, PraiseAdmin)
+xadmin.site.register(Publishment, PublishAdmin)
 
 
 xadmin.site.register(Department, DepartmentAdmin)
