@@ -1,9 +1,10 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, reverse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.views import View
 from django.views.decorators.csrf import csrf_exempt
-from school_student.models import *
+from quality.models import *
 import json
+from quality import base
 
 class Search(View):
     def get(self, request):
@@ -104,3 +105,137 @@ def verify(request):
             return HttpResponse(json.dumps(data), content_type="application/json")
         else:
             return HttpResponse(json.dumps({"exist": 0}))
+
+
+class Login(View):
+    def get(self, request):
+        return render(request, 'quality/login.html')
+
+    def post(self, request):
+        student_id = request.POST.get('student_id')
+        password = base.encodepass( request.POST.get('password') )
+        student = Student.objects.filter(student_id=student_id)
+        if len(student)>0:
+            if password == student[0].password:
+                request.session['id'] = student[0].id
+                request.session['student_id'] = student[0].student_id
+                request.session['student_name'] = student[0].student_name
+                return HttpResponse(json.dumps({'status': 1}), content_type='json')  # 1，登录成功
+            else:
+                return HttpResponse(json.dumps({'status': 3}), content_type='json')  # 3，密码错误
+        else:
+            return HttpResponse(json.dumps({'status': 2}), content_type='json')    # 2，学号不存在
+
+
+def quit(request):
+    del request.session['id']
+    del request.session['student_id']
+    del request.session['student_name']
+    return HttpResponse(json.dumps({'status': 1}), content_type='json')  # 1，退出成功
+
+
+def IsLogin(func):
+    def wrapper(obj, request):
+        if request.session.get('id'):
+            func(obj, request)
+        else:
+            return HttpResponseRedirect(reverse('quality:login'))
+    return wrapper
+
+
+class Index(View):
+    # @IsLogin
+    def get(self, request):
+        res = {}
+        res['student_id'] = request.session.get('student_id')
+        res['student_name'] = request.session.get('student_name')
+        return render(request, 'quality/index.html', res)
+
+
+class Info(View):
+    def get(self, request):
+        student = Student.objects.get(id=int(request.session.get('id')))
+        res = {
+            "student_name": student.student_name,
+            "sex": student.sex,
+            "nation": student.nation,
+            "student_department": student.student_department,
+            "student_grade": student.student_grade,
+            "political_satus": student.political_satus,
+            "duty": student.duty,
+            "address": student.address,
+            "contact": student.contact,
+            "parent_contact": student.parent_contact,
+            "account": student.account,
+        }
+        return render(request, 'quality/info.html', res)
+
+    def post(self, request):
+        student = Student.objects.get(id=int(request.session.get('id')))
+        # student.student_name = request.POST.get('student_name')
+        student.sex = request.POST.get('sex')
+        student.nation = request.POST.get('nation')
+        # student.student_department = request.POST.get('student_department')
+        # student.student_grade = request.POST.get('student_grade')
+        student.political_satus = request.POST.get('political_satus')
+        student.duty = request.POST.get('duty')
+        student.address = request.POST.get('address')
+        student.contact = request.POST.get('contact')
+        student.parent_contact = request.POST.get('parent_contact')
+        student.account = request.POST.get('account')
+        student.save()
+        return HttpResponse(json.dumps({'status': 1}), content_type='json')  # 1，修改成功
+
+
+class ChangePass(View):
+    def get(self, request):
+        return render(request, 'quality/changepass.html')
+
+    def post(self, request):
+        old_pass = base.encodepass( request.POST.get('old_pass') )
+        new_pass = base.encodepass( request.POST.get('new_pass') )
+        student = Student.objects.get(id=int(request.session.get('id')))
+        if student.password == old_pass:
+            student.password = new_pass
+            student.save()
+            return HttpResponse(json.dumps({'status': 1}), content_type='json')  # 1，修改成功
+        else:
+            return HttpResponse(json.dumps({'status': 2}), content_type='json')  # 2，原密码错误
+
+
+class Quality(View):
+    def get(self, request):
+        terms =  Term.objects.all().order_by('-id')
+        for term in terms:
+            term.praises = PraiseRecord.objects.filter(term=term)
+            term.publishes = PublishmentRecord.objects.filter(term=term)
+            term.remark = Remark.objects.filter(term=term)[0].text.split('\n')
+        res = {'terms': terms}
+        return render(request, 'quality/quality.html', res)
+
+    def post(self, request):
+        pass
+
+def praise_info(request):
+    praise = PraiseRecord.objects.get(id = int(request.POST.get('id')))
+    res = {
+        "type": praise.praise_type.name,
+        "standard": PraiseRecord.standard_choice[int(praise.standard)-1][1],
+        "text": praise.text,
+        "description": praise.description,
+        "image": praise.image.url if praise.image else '',
+        "praise_time": praise.praise_time.strftime('%Y-%m-%d')
+    }
+    return HttpResponse(json.dumps(res), content_type='json')
+
+def publish_info(request):
+    publish = PublishmentRecord.objects.get(id = int(request.POST.get('id')))
+    res = {
+        "type": publish.publish_type.name,
+        "text": publish.text,
+        "description": publish.description,
+        "image": publish.image.url if publish.image else '' ,
+        "publish_time": publish.publish_time.strftime('%Y-%m-%d')
+    }
+    return HttpResponse(json.dumps(res), content_type='json')
+

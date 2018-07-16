@@ -40,31 +40,49 @@
 			<img class="img-circle img-thumbnail" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1034317729,337624616&fm=27&gp=0.jpg">
 		</div>
 		<div class="info">
-			<h5>学号：1511112112</h5>
-			<h5>姓名：侯亚杰</h5>
+			<h5>学号：{{ student_id }}</h5>
+			<h5>姓名：{{ student_name }}</h5>
 		</div>
 	</div>
 
 	<ul class="list-group">
-	    <a href="#"><li class="list-group-item">
+	    <a href="{% url 'quality:info' %}"><li class="list-group-item">
 	    	<span class="badge"> > </span>
 	    	基本信息
 	    </li></a>
-	    <a href="#"><li class="list-group-item">
+	    <a href="{% url 'quality:changepass' %}"><li class="list-group-item">
 	    	<span class="badge"> > </span>
 	    	密码修改
 	    </li></a>
-	    <a href="#"><li class="list-group-item">
+	    <a href="{% url 'quality:quality' %}"><li class="list-group-item">
 	    	<span class="badge"> > </span>
 	    	素质记录
 	    </li></a>
 	</ul>
 
+    <ul class="list-group">
+	    <li class="list-group-item" id="quit">
+	    	<span class="badge"> > </span>
+	    	退出登录
+	    </li>
+	</ul>
+
 	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript">
-		$("#login").click(function() {
-			window.location.href = "index.html";
-		})
+        $("#quit").click(function () {
+            $.ajax({
+			    url: '{% url 'quality:quit' %}',
+                type: "get",
+                dataType: 'json',
+                success: function (res) {
+                    if (res.status == 1) {
+                        window.location.href = '{% url 'quality:login' %}'
+                    } else {
+                        alert('服务器异常，请稍后重试')
+                    }
+                }
+            })
+        })
 	</script>
 </body>
 </html>

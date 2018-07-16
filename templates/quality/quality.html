@@ -9,9 +9,12 @@
 		body {
 			background: #f0f1f2;
 		}
+		#info {
+			margin-top: 50px;
+		}
 
 		.panel-body {
-			padding: 0px;
+			padding: 0;
 		}
 		.sub-panel {
 			border-bottom: 1px solid #ccc;
@@ -19,272 +22,166 @@
 		}
 		.sub-panel .sub-panel-title {
 			padding: 1px;
-			width: 40px;
+			width: 10%;
 			writing-mode: vertical-rl;
 			text-align: center;
 		}
 		.sub-panel .sub-panel-content {
+            width: 90%;
 			border-left: 1px solid #ccc;
 			min-height: 80px;
-			padding: 5px;
+			padding: 5px 1.5em 5px 5px;
 		}
+        .sub-panel p {
+            text-indent: 2em;
+            margin-bottom: 0;
+        }
 	</style>
 </head>
 <body>
+    {% csrf_token %}
+	<!-- 详细信息 -->
+	<div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">详细信息</h4>
+            </div>
+            <div class="modal-body">
+            	<div class="form-group row">
+			        <label for="student_department" class="control-label col-xs-2 text-right">类型</label>
+			        <div class="col-xs-8" id="type"></div>
+			    </div>
+                <div class="form-group row">
+			        <label for="student_department" class="control-label col-xs-2 text-right">级别</label>
+			        <div class="col-xs-8" id="standard"></div>
+			    </div>
+			    <div class="form-group row">
+			        <label for="student_department" class="control-label col-xs-2 text-right">说明</label>
+			        <div class="col-xs-8" id="text"></div>
+			    </div>
+			    <div class="form-group row">
+			        <label for="student_department" class="control-label col-xs-3 text-right">补充说明</label>
+			        <div class="col-xs-8" id="description"></div>
+			    </div>
+			    <div class="form-group row">
+			        <label for="student_department" class="control-label col-xs-2 text-right">图片</label>
+			        <div class="col-xs-8">
+			        	<img src="" id="image" class="img-responsive">
+			        </div>
+			    </div>
+			    <div class="form-group row">
+			        <label for="student_department" class="control-label col-xs-2 text-right">时间</label>
+			        <div class="col-xs-8" id="praise_time"></div>
+			    </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">确定</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
 	<h2 class="text-center">素质记录</h2>
+    {% for term in terms %}
 	<div class="panel panel-success">
         <div class="panel-heading">
-            <h3 class="panel-title text-center">第八学期</h3>
+            <h3 class="panel-title text-center">{{ term.name }}</h3>
         </div>
         <div class="panel-body" id="praise">
         	<div class="sub-panel row">
         		<div class="sub-panel-title">素 质 拓 展</div>
         		<div class="sub-panel-content">
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
+                    {% for praise in term.praises %}
+                        <p>
+                        	<label>{{ praise.praise_type }}：</label> 
+                        	<a class="praise-item" id="{{ praise.id }}"> {{ praise.text }} </a>
+                        </p>
+                    {% endfor %}
         		</div>
         	</div>
         	<div class="sub-panel row">
         		<div class="sub-panel-title">违 规 违 纪</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">素 质 评 定</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">德 育 成 绩</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-
-        </div>
-    </div>
-    <div class="panel panel-success">
-        <div class="panel-heading">
-            <h3 class="panel-title text-center">第七学期</h3>
-        </div>
-        <div class="panel-body" id="praise">
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">素 质 拓 展</div>
         		<div class="sub-panel-content">
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        		</div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">违 规 违 纪</div>
-        		<div class="sub-panel-content"></div>
+                    {% for publish in term.publishes %}
+                        <p>
+                        	<label>{{ publish.publish_type }}：</label> 
+                        	<a class="publish-item" id="{{ publish.id }}"> {{ publish.text }} </a>
+                        </p>
+                    {% endfor %}
+                </div>
         	</div>
         	<div class="sub-panel row">
         		<div class="sub-panel-title">素 质 评 定</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">德 育 成 绩</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-        </div>
-    </div>
-    <div class="panel panel-success">
-        <div class="panel-heading">
-            <h3 class="panel-title text-center">第六学期</h3>
-        </div>
-        <div class="panel-body" id="praise">
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">素 质 拓 展</div>
         		<div class="sub-panel-content">
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        		</div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">违 规 违 纪</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">素 质 评 定</div>
-        		<div class="sub-panel-content"></div>
+                    {% for line in term.remark %}
+                        <p>{{ line }}</p>
+                    {% endfor %}
+                </div>
         	</div>
         	<div class="sub-panel row">
         		<div class="sub-panel-title">德 育 成 绩</div>
-        		<div class="sub-panel-content"></div>
+        		<div class="sub-panel-content">80</div>
         	</div>
-
-        </div>
         </div>
     </div>
-    <div class="panel panel-success">
-        <div class="panel-heading">
-            <h3 class="panel-title text-center">第五学期</h3>
-        </div>
-        <div class="panel-body" id="praise">
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">素 质 拓 展</div>
-        		<div class="sub-panel-content">
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        		</div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">违 规 违 纪</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">素 质 评 定</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">德 育 成 绩</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-
-        </div>
-        </div>
-    </div>
-    <div class="panel panel-success">
-        <div class="panel-heading">
-            <h3 class="panel-title text-center">第四学期</h3>
-        </div>
-        <div class="panel-body" id="praise">
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">素 质 拓 展</div>
-        		<div class="sub-panel-content">
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        		</div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">违 规 违 纪</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">素 质 评 定</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">德 育 成 绩</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-
-        </div>
-        </div>
-    </div>
-    <div class="panel panel-success">
-        <div class="panel-heading">
-            <h3 class="panel-title text-center">第三学期</h3>
-        </div>
-        <div class="panel-body" id="praise">
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">素 质 拓 展</div>
-        		<div class="sub-panel-content">
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        		</div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">违 规 违 纪</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">素 质 评 定</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">德 育 成 绩</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-
-        </div>
-        </div>
-    </div>
-    <div class="panel panel-success">
-        <div class="panel-heading">
-            <h3 class="panel-title text-center">第二学期</h3>
-        </div>
-        <div class="panel-body" id="praise">
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">素 质 拓 展</div>
-        		<div class="sub-panel-content">
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        		</div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">违 规 违 纪</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">素 质 评 定</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">德 育 成 绩</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-
-        </div>
-        </div>
-    </div>
-    <div class="panel panel-success">
-        <div class="panel-heading">
-            <h3 class="panel-title text-center">第一学期</h3>
-        </div>
-        <div class="panel-body" id="praise">
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">素 质 拓 展</div>
-        		<div class="sub-panel-content">
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        			<h5>abc</h5>
-        		</div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">违 规 违 纪</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">素 质 评 定</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-        	<div class="sub-panel row">
-        		<div class="sub-panel-title">德 育 成 绩</div>
-        		<div class="sub-panel-content"></div>
-        	</div>
-
-        </div>
-        </div>
-    </div>
+    {% endfor %}
     
 
 	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 		$("div.panel-body").hide();
 		$("div.panel-body").eq(0).show();
 		$("div.panel-heading").click(function(e) {
             $(this).next().toggle();
+        })
+
+        $(".praise-item").click(function() {
+        	id = this.id
+        	$.ajax({
+			    url: '{% url "quality:praise_info" %}',
+                type: "post",
+                data: {
+                	id: id,
+                	csrfmiddlewaretoken: $("input[name='csrfmiddlewaretoken']").val()
+                },
+                dataType: 'json',
+                success: function (res) {
+                	$("#type").text(res.type);
+                	$("#standard").show();
+                    $("#standard").text(res.standard);
+                    $("#text").text(res.text);
+                    $("#description").text(res.description);
+                    $("#image").attr('src', res.image);
+                    $("#praise_time").text(res.praise_time);
+                }
+            });
+        	$("#info").modal('show');
+        })
+
+        $(".publish-item").click(function() {
+        	id = this.id
+        	$.ajax({
+			    url: '{% url "quality:publish_info" %}',
+                type: "post",
+                data: {
+                	id: id,
+                	csrfmiddlewaretoken: $("input[name='csrfmiddlewaretoken']").val()
+                },
+                dataType: 'json',
+                success: function (res) {
+                	$("#type").text(res.type);
+                    $("#standard").hide();
+                    $("#text").text(res.text);
+                    $("#description").text(res.description);
+                    $("#image").attr('src', res.image);
+                    $("#praise_time").text(res.praise_time);
+                }
+            });
+        	$("#info").modal('show');
         })
 	</script>
 </body>

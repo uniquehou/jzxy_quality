@@ -21,46 +21,113 @@
 <body>
 	<h2 class="text-center">基本信息</h2>
 	<form class="form-horizontal" id="addform">
+        {% csrf_token %}
 	    <div class="form-group row">
 	        <label for="name" class="control-label col-xs-3 text-right col-xs-offset-1">姓名</label>
 	        <div class="col-xs-7">
-	            <input type="text" name="student_id" class="form-control" placeholder="姓名" >
+	            <input type="text" name="student_name" class="form-control" placeholder="姓名"  value="{{ student_name }}" disabled>
 	        </div>
 	    </div>
 	    <div class="form-group row">
 	        <label for="sex" class="control-label col-xs-3 text-right col-xs-offset-1">性别</label>
 	        <div class="col-xs-7">
-	            <input type="text" name="student_id" class="form-control" placeholder="性别">
+	            <select class="form-control" name="sex">
+	                <option value="1">男</option>
+	                <option value="2">女</option>
+	            </select>
 	        </div>
 	    </div>
 	    <div class="form-group row">
 	        <label class="control-label col-xs-3 text-right col-xs-offset-1">民族</label>
 	        <div class="col-xs-7">
-	            <input type="text" name="student_id" class="form-control" placeholder="民族">
+	            <select class="form-control" name="nation">
+	                <option value="1">汉族</option>
+	                <option value="2">壮族</option>
+	                <option value="3">满族</option>
+	                <option value="4">回族</option>
+	                <option value="5">苗族</option>
+	                <option value="6">维吾尔族</option>
+	                <option value="7">土家族</option>
+	                <option value="8">彝族</option>
+	                <option value="9">蒙古族</option>
+	                <option value="10">藏族</option>
+	                <option value="11">布依族</option>
+	                <option value="12">侗族</option>
+	                <option value="13">瑶族</option>
+	                <option value="14">朝鲜族</option>
+	                <option value="15">白族</option>
+	                <option value="16">哈尼族</option>
+	                <option value="17">哈萨克族</option>
+	                <option value="18">黎族</option>
+	                <option value="19">傣族</option>
+	                <option value="20">畲族</option>
+	                <option value="21">傈僳族</option>
+	                <option value="22">仡佬族</option>
+	                <option value="23">东乡族</option>
+	                <option value="24">高山族</option>
+	                <option value="25">拉祜族</option>
+	                <option value="26">水族</option>
+	                <option value="27">佤族</option>
+	                <option value="28">纳西族</option>
+	                <option value="29">羌族</option>
+	                <option value="30">土族</option>
+	                <option value="31">仫佬族</option>
+	                <option value="32">锡伯族</option>
+	                <option value="33">柯尔克孜族</option>
+	                <option value="34">达斡尔族</option>
+	                <option value="35">景颇族</option>
+	                <option value="36">毛南族</option>
+	                <option value="37">撒拉族</option>
+	                <option value="38">布朗族</option>
+	                <option value="39">塔吉克族</option>
+	                <option value="40">阿昌族</option>
+	                <option value="41">普米族</option>
+	                <option value="42">鄂温克族</option>
+	                <option value="43">怒族</option>
+	                <option value="44">京族</option>
+	                <option value="45">基诺族</option>
+	                <option value="46">德昂族</option>
+	                <option value="47">保安族</option>
+	                <option value="48">俄罗斯族</option>
+	                <option value="49">裕固族</option>
+	                <option value="50">乌孜别克族</option>
+	                <option value="51">门巴族</option>
+	                <option value="52">鄂伦春族</option>
+	                <option value="53">独龙族</option>
+	                <option value="54">塔塔尔族</option>
+	                <option value="55">赫哲族</option>
+	                <option value="56">珞巴族</option>
+	            </select>
 	        </div>
 	    </div>
 	    <div class="form-group row">
 	        <label for="student_department" class="control-label col-xs-3 text-right col-xs-offset-1">院系</label>
 	        <div class="col-xs-7">
-	            <input type="text" name="student_id" class="form-control" placeholder="院系">
+	            <input type="text" name="student_department" class="form-control" placeholder="院系" value="{{ student_department }}" disabled>
 	        </div>
 	    </div>
 	    <div class="form-group row">
 	        <label for="student_grade" class="control-label col-xs-3 text-right col-xs-offset-1">班级</label>
 	        <div class="col-xs-7">
-	            <input type="text" name="student_id" class="form-control" placeholder="班级">
+	            <input type="text" name="student_grade" class="form-control" placeholder="班级" value="{{ student_grade }}" disabled>
 	        </div>
 	    </div>
 	    <div class="form-group row">
 	        <label for="student_grade" class="control-label col-xs-3 text-right col-xs-offset-1">政治面貌</label>
 	        <div class="col-xs-7">
-	            <input type="text" name="student_id" class="form-control" placeholder="政治面貌">
+	            <select name="political_satus" class="form-control">
+	                <option value="1">群众</option>
+	                <option value="2">共青团员</option>
+	                <option value="3">预备党员</option>
+	                <option value="4">共产党员</option>
+	                <option value="5">其它</option>
+	            </select>
 	        </div>
 	    </div>
 	    <div class="form-group row">
 	        <label for="duty" class="control-label col-xs-3 text-right col-xs-offset-1">担任职务</label>
 	        <div class="col-xs-7">
-	            <input type="text" name="student_id" class="form-control" placeholder="担任职务">
+	            <input type="text" name="duty" class="form-control" placeholder="担任职务" value="{{ duty }}">
 	        </div>
 	    </div>
 
@@ -68,19 +135,19 @@
 	    <div class="form-group row">
 	        <label for="duty" class="control-label col-xs-3 text-right col-xs-offset-1">住址</label>
 	        <div class="col-xs-7">
-	            <input type="text" name="student_id" class="form-control" placeholder="楼号#宿舍号#床位。如32#213#4">
+	            <input type="text" name="address" class="form-control" placeholder="楼号#宿舍号#床位。如32#213#4" value="{{ address }}">
 	        </div>
 	    </div>
 	    <div class="form-group row">
 	        <label for="duty" class="control-label col-xs-3 text-right col-xs-offset-1">本人联系方式</label>
 	        <div class="col-xs-7">
-	            <input type="text" name="student_id" class="form-control" placeholder="本人联系方式">
+	            <input type="text" name="contact" class="form-control" placeholder="本人联系方式" value="{{ contact }}">
 	        </div>
 	    </div>
 	    <div class="form-group row">
 	        <label for="duty" class="control-label col-xs-3 text-right col-xs-offset-1">亲属联系方式</label>
 	        <div class="col-xs-7">
-	            <input type="text" name="student_id" class="form-control" placeholder="亲属联系方式">
+	            <input type="text" name="parent_contact" class="form-control" placeholder="亲属联系方式" value="{{ parent_contact }}">
 	        </div>
 	    </div>
 
@@ -88,7 +155,7 @@
         <div class="form-group row">
 	        <label for="duty" class="control-label col-xs-3 text-right col-xs-offset-1">一卡通卡号</label>
 	        <div class="col-xs-7">
-	            <input type="text" name="student_id" class="form-control" placeholder="一卡通卡号">
+	            <input type="text" name="account" class="form-control" placeholder="一卡通卡号" value="{{ account }}">
 	        </div>
 	    </div>
 	</form>
@@ -97,8 +164,24 @@
 
 	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript">
+		$("select[name='sex']").val("{{ sex }}")
+		$("select[name='nation']").val("{{ nation }}")
+		$("select[name='political_satus']").val("{{ political_satus }}")
+
 		$("#change").click(function() {
-			
+			$.ajax({
+			    url: '#',
+                type: "post",
+                data: $("form").serialize(),
+                dataType: 'json',
+                success: function (res) {
+                    if (res.status == 1) {
+                        alert('修改成功')
+                    } else {
+                        alert('修改失败，请稍后重试')
+                    }
+                }
+            })
 		});
 	</script>
 </body>
