@@ -3,7 +3,7 @@ from quality.views import *
 
 app_name = 'quality'
 urlpatterns = [
-    url(r'^$', Index.as_view(), name='default'),    # 首页
+    url(r'^$', Login.as_view(), name='default'),    # 首页
     url(r'^search/$', Search.as_view(), name='search'),
     url(r'^venify/$', verify, name='venify'),     # 验证学号
     url(r'^addinfo/$', AddInfo.as_view(), name='addinfo'),    # 补全信息
