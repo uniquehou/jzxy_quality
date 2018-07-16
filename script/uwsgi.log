@@ -1519,3 +1519,66 @@ Invalid HTTP_HOST header: 'VM-218-113-ubuntu:8055'. You may need to add 'vm-218-
 [pid: 6136|app: 0|req: 15/71] 183.57.54.43 () {22 vars in 227 bytes} [Sat Jul 14 20:08:32 2018] GET / => generated 56058 bytes in 49 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
 Invalid HTTP_HOST header: 'VM-218-113-ubuntu:8055'. You may need to add 'vm-218-113-ubuntu' to ALLOWED_HOSTS.
 [pid: 6134|app: 0|req: 15/72] 183.57.54.43 () {22 vars in 227 bytes} [Sat Jul 14 20:08:37 2018] GET / => generated 56058 bytes in 52 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.15 (64bit) on [Mon Jul 16 18:19:35 2018] ***
+compiled with version: 5.4.0 20160609 on 22 December 2017 10:25:14
+os: Linux-4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016
+nodename: VM-218-113-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/jzxy_quality
+writing pidfile to /var/www/jzxy_quality/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/jzxy_quality
+your processes number limit is 3308
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+probably another instance of uWSGI is running on the same address (:8055).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.15 (64bit) on [Mon Jul 16 18:22:32 2018] ***
+compiled with version: 5.4.0 20160609 on 22 December 2017 10:25:14
+os: Linux-4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016
+nodename: VM-218-113-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/jzxy_quality
+writing pidfile to /var/www/jzxy_quality/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/jzxy_quality
+your processes number limit is 3308
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+probably another instance of uWSGI is running on the same address (:8055).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.15 (64bit) on [Mon Jul 16 18:23:33 2018] ***
+compiled with version: 5.4.0 20160609 on 22 December 2017 10:25:14
+os: Linux-4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016
+nodename: VM-218-113-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/jzxy_quality
+writing pidfile to /var/www/jzxy_quality/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/jzxy_quality
+your processes number limit is 3308
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+probably another instance of uWSGI is running on the same address (:8055).
+bind(): Address already in use [core/socket.c line 769]

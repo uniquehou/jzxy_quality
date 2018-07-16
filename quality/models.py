@@ -212,7 +212,7 @@ class Remark(models.Model):
     text = models.TextField(u'评定内容', default='空')
 
     def __str__(self):
-        return f"{self.term.name} - {self.student.student_name}"
+        return self.term.name + '-' + self.student.student_name
 
     class Meta:
         verbose_name = '素质评定'
